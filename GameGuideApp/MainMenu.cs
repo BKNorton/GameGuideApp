@@ -8,5 +8,6 @@ namespace GameGuideApp
 {
     internal class MainMenu
     {
+        //this is a test
     }
 }
