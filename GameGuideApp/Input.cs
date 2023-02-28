@@ -9,6 +9,7 @@ namespace GameGuideApp
     class Input
     {
         public string? input;
+        public string? errorMessage;
 
         public void RecieveInput()
         {
@@ -24,8 +25,12 @@ namespace GameGuideApp
 
         public bool ValidateInput()
         {
-            if (!int.TryParse(input, out int result)) return false;
-            else if (result < 0 || result > 10) return false;
+            if (!int.TryParse(input, out int result) 
+                || (result < 0 || result > 10))
+            {
+                errorMessage = "Invalid Input";
+                return false;
+            }
             else return true;
         }
 

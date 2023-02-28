@@ -18,7 +18,9 @@ namespace GameGuideApp
             {
                 mainMenu.Display();
                 input.RecieveInput();
-                input.ValidateInput();
+                if (input.ValidateInput()) { }
+                else Console.WriteLine(input.errorMessage);
+                Console.WriteLine();
             }
             while (input.input != "0");
         }
