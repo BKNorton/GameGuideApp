@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class Input
+    class Input
     {
         public string? input;
 
@@ -16,17 +16,22 @@ namespace GameGuideApp
             {
                 input = Console.ReadLine();
             }
-            catch 
+            catch (Exception e)
             {
                 Console.WriteLine("Something went wrong");
             }  
         }
 
-        public bool ValidateInput(string input)
+        public bool ValidateInput()
         {
             if (!int.TryParse(input, out int result)) return false;
             else if (result < 0 || result > 10) return false;
             else return true;
+        }
+
+        public void ClearInput()
+        {
+            input = null;
         }
     }
 }

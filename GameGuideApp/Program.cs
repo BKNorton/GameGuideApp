@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class Program
+    class Program
     {
-        public static void main(string[] args)
+        public static void Main(string[] args)
         {
-            var mainMenu = new MainMenu();
+            MainMenu mainMenu = new MainMenu();
             Input input = new Input();
-
+   
             do
             {
                 mainMenu.Display();
-
+                input.RecieveInput();
+                input.ValidateInput();
             }
             while (input.input != "0");
         }

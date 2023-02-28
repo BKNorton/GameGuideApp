@@ -6,24 +6,34 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class MainMenu : Menu
+    class MainMenu : Menu
     {   
         private List<Game> games;
 
         //Games
-        //Limited to 10 games
+        //Limited to 9 games
         private Game MonsterHunterRise;
+        private Game Halo;
 
         public MainMenu()
         {
             prompt = "Select Game";
             games = new List<Game>();
+            
 
             //Initiate Games
             MonsterHunterRise = new MonsterHunterRise();
+            Halo = new Halo();
 
             //Add games
             games.Add(MonsterHunterRise);
+            games.Add(Halo);
+
+            //Insure that there are 9 game objects in list
+            for (int i = games.Count; i < 9; i++)
+            {
+                games.Add(new Game());
+            }
         }
         public void Display()
         {
@@ -34,6 +44,7 @@ namespace GameGuideApp
             {
                 Console.WriteLine($"- {i + 1} : {games[i].name}");
             }
+            Console.WriteLine("- 0 : Exit");
         }
     }
 }

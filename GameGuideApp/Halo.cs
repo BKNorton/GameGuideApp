@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    class Menu
+    internal class Halo : Game
     {
-        public string? prompt;
+        public Halo() 
+        {
+            name = "Halo";
+        }
     }
 }

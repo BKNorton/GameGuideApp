@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class Game
+    class Game
     {
         public string? name;
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class MonsterHunterRise : Game
+    class MonsterHunterRise : Game
     {
         public MonsterHunterRise()
         {

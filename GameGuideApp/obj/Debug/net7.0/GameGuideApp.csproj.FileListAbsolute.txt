@@ -3,3 +3,13 @@ C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.
 C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.AssemblyInfoInputs.cache
 C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.AssemblyInfo.cs
 C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.csproj.CoreCompileInputs.cache
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\GameGuideApp.exe
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\GameGuideApp.deps.json
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\GameGuideApp.runtimeconfig.json
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\GameGuideApp.dll
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\GameGuideApp.pdb
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.dll
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\refint\GameGuideApp.dll
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.pdb
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.genruntimeconfig.cache
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\ref\GameGuideApp.dll
