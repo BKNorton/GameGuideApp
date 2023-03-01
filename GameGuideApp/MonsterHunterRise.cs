@@ -8,9 +8,14 @@ namespace GameGuideApp
 {
     class MonsterHunterRise : Game
     {
+        public List<SubMenu> subMenus;
+
         public MonsterHunterRise()
         {
             name = "MonsterHunterRise";
+            subMenus= new List<SubMenu>();
         }
+
+        
     }
 }

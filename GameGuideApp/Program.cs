@@ -16,9 +16,15 @@ namespace GameGuideApp
    
             do
             {
+                //MainMenu
                 mainMenu.Display();
                 input.RecieveInput();
-                if (input.ValidateInput()) { }
+                if (input.ValidateInput()) 
+                {
+
+                }
+
+                //
                 else Console.WriteLine(input.errorMessage);
                 Console.WriteLine();
             }
