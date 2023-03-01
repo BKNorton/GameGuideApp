@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    class Input
+    internal class Input
     {
         public string? input;
         public string? errorMessage;

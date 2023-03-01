@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class Materials
+    internal class MaterialsMenu : Menu
     {
+        private List<Menu> subMenus;
+
+        public MaterialsMenu()
+        {
+            //Parent Properties
+            menuTitle = "Materials";
+            prompt = "Select a Material";
+
+            //Class Properies
+            subMenus = new List<Menu>();
+
+            //Add Menu options
+        }
+
+        public void Display()
+        {
+            base.Display();
+        }
     }
 }

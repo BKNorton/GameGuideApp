@@ -6,16 +6,32 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    class MonsterHunterRise : Game
+    internal class MonsterHunterRise : Game
     {
-        public List<SubMenu> subMenus;
+        //Menus
+        private Menu weaponsMenu;
+        private Menu monstersMenu;
+        private Menu materialsMenu;
 
         public MonsterHunterRise()
         {
+            //Parent Properties
             name = "MonsterHunterRise";
-            subMenus= new List<SubMenu>();
-        }
 
-        
+            //Class Properties
+            weaponsMenu = new WeaponsMenu();
+            monstersMenu = new MonstersMenu();
+            materialsMenu = new MaterialsMenu();
+
+            PopulateMenus();
+        } 
+
+        public void PopulateMenus()
+        {
+            menus.Add(weaponsMenu);
+            menus.Add(monstersMenu);
+            menus.Add(materialsMenu);
+        }
+ 
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    class Menu
+    internal class Menu
     {
         public string? prompt;
         public string? menuTitle;

@@ -7,7 +7,7 @@ using System.Transactions;
 
 namespace GameGuideApp
 {
-    class MainMenu : Menu
+    internal class MainMenu : Menu
     {   
         private List<Game> games;
 
@@ -18,7 +18,7 @@ namespace GameGuideApp
 
         public MainMenu()
         {
-            //Menu Properties
+            //Parent Properties
             menuTitle = "Game Guide App:\n\nMain Menu";
             prompt = "Select Game";
             
