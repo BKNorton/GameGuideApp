@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class WeaponsMenu : Menu
+    class WeaponsMenu : Menu
     {
-        private List<Menu> subMenus;
+        
         
         public WeaponsMenu() 
         {

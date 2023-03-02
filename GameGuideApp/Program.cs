@@ -7,28 +7,30 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class Program
+    class Program
     {
         public static void Main(string[] args)
         {
+            MenuNavigation nav = new MenuNavigation();
             MainMenu mainMenu = new MainMenu();
             Input input = new Input();
-   
+
+            //MainMenu
+            //mainMenu.Display();
+            nav.path.Push(mainMenu);
+            Console.WriteLine("Game Guide App:\n");
             do
             {
-                //MainMenu
-                mainMenu.Display();
+                nav.path.Peek().Display();
                 input.RecieveInput();
-                if (input.ValidateInput()) 
+                while (!input.ValidateInput(nav.path.Peek()))
                 {
-
+                    input.WriteErrorMessage();
+                    input.RecieveInput();
                 }
-
-                //
-                else Console.WriteLine(input.errorMessage);
-                Console.WriteLine();
+                nav.PickMenu(input, nav.path.Peek().subMenus);
             }
-            while (input.input != "0");
+            while (!nav.exit);
         }
     }
 }

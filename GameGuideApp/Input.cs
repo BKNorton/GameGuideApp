@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class Input
+    class Input
     {
         public string? input;
         public string? errorMessage;
+        public int inputInt;
 
         public void RecieveInput()
         {
@@ -20,23 +21,38 @@ namespace GameGuideApp
             catch (Exception e)
             {
                 Console.WriteLine("Something went wrong");
-            }  
+            }
         }
 
-        public bool ValidateInput()
+        //Validate that input is an int, and in range
+        public bool ValidateInput(Menu menu)
         {
-            if (!int.TryParse(input, out int result) 
-                || (result < 0 || result > 10))
+            if (!int.TryParse(input, out int result)
+                || result < 0 || result > menu.subMenus.Count)
             {
                 errorMessage = "Invalid Input";
                 return false;
             }
-            else return true;
+            inputInt = result;
+            return true;
+                
+        }
+
+        public void WriteErrorMessage()
+        {
+            Console.WriteLine(errorMessage);
         }
 
         public void ClearInput()
         {
-            input = null;
+            input = string.Empty;
         }
+
+        public void ClearErrorMessage()
+        {
+            errorMessage = string.Empty;
+        }
+
+
     }
 }

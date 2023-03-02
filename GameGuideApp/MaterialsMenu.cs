@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class MaterialsMenu : Menu
+    class MaterialsMenu : Menu
     {
-        private List<Menu> subMenus;
-
         public MaterialsMenu()
         {
             //Parent Properties

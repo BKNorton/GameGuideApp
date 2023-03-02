@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class Halo : Game
+    class Halo : Game
     {
         public Halo() 
         {

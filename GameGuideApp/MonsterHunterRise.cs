@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class MonsterHunterRise : Game
+    class MonsterHunterRise : Game
     {
         //Menus
         private Menu weaponsMenu;
@@ -17,7 +17,13 @@ namespace GameGuideApp
         {
             //Parent Properties
             name = "MonsterHunterRise";
-
+            gameMenu = new Menu();
+            {
+                gameMenu.menuTitle = name;
+                gameMenu.prompt = "Select menu";
+            }
+            //menuTitle = name;
+            
             //Class Properties
             weaponsMenu = new WeaponsMenu();
             monstersMenu = new MonstersMenu();
@@ -28,9 +34,9 @@ namespace GameGuideApp
 
         public void PopulateMenus()
         {
-            menus.Add(weaponsMenu);
-            menus.Add(monstersMenu);
-            menus.Add(materialsMenu);
+            gameMenu.subMenus.Add(weaponsMenu);
+            gameMenu.subMenus.Add(monstersMenu);
+            gameMenu.subMenus.Add(materialsMenu);
         }
  
     }

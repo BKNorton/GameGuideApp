@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class MonstersMenu : Menu
+    class MonstersMenu : Menu
     {
-        private List<Menu> subMenus;
 
         public MonstersMenu()
         {
