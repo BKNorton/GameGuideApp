@@ -21,7 +21,7 @@ namespace GameGuideApp
         public void PickMenu(Input input, List<Menu> menus)
         {
             //if the user wants to exit the program
-            if (input.inputInt == 0 && path.Peek().menuTitle != "Main Menu")
+            if (input.inputInt == 0 && path.Peek().menuTitle == "Main Menu")
             {
                 ExitProgram();
             }

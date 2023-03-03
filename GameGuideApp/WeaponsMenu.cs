@@ -20,7 +20,7 @@ namespace GameGuideApp
             //Add Menu options
         }
 
-        public void Display()
+        public override void Display()
         {
             base.Display();
         }
