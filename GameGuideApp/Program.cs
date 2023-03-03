@@ -15,19 +15,27 @@ namespace GameGuideApp
             MainMenu mainMenu = new MainMenu();
             Input input = new Input();
 
-            //MainMenu
-            //mainMenu.Display();
+            //Add main menu into menu path
             nav.path.Push(mainMenu);
-            Console.WriteLine("Game Guide App:\n");
+            Console.WriteLine("Game Guide App:");
+
             do
             {
+                //Display menu and recieve user input
                 nav.path.Peek().Display();
+                input.ClearInput();
                 input.RecieveInput();
+
+                //Display error message until user enters valid input
                 while (!input.ValidateInput(nav.path.Peek()))
                 {
                     input.WriteErrorMessage();
+                    input.ClearErrorMessage();
+                    input.ClearInput();
                     input.RecieveInput();
                 }
+
+                //Select next menu
                 nav.PickMenu(input, nav.path.Peek().subMenus);
             }
             while (!nav.exit);

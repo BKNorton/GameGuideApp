@@ -10,11 +10,8 @@ namespace GameGuideApp
     class MainMenu : Menu
     {   
         public List<Game> games;
-        //public List<Menu> menus;
-        public int numOfGames => games.Count;
 
         //Games
-        //Limited to 9 games
         private Game MonsterHunterRise; //1
         private Game Halo;              //2
 
@@ -26,7 +23,6 @@ namespace GameGuideApp
             
             //Class Properties
             games = new List<Game>();
-            //menus = new List<Menu>();
 
             //Initiate Games
             MonsterHunterRise = new MonsterHunterRise();
@@ -36,30 +32,25 @@ namespace GameGuideApp
             games.Add(MonsterHunterRise);
             games.Add(Halo);
 
-            //Insure that there are 9 game objects in list
-            for (int i = games.Count; i < 9; i++)
-            {
-                games.Add(new Game());
-            }
-
             //Add gameMenus to menus
             foreach(Game game in games)
             {
                 subMenus.Add(game.gameMenu);
-            }
+            }  
         }
 
+        //Dislplay uses games instead of menus
         public override void Display()
         {
             Console.WriteLine();
             Console.WriteLine(menuTitle);
             Console.WriteLine(prompt);
-            //base.Display();
+            
             for (int i = 0; i < games.Count; i++) 
             {
                 Console.WriteLine($"- {i + 1} : {games[i].name}");
             }
-            Console.WriteLine("- 0 : Exit/Back");
+            Console.WriteLine("- 0 : Exit");
         }
     }
 }

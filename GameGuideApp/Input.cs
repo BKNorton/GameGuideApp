@@ -25,6 +25,7 @@ namespace GameGuideApp
         }
 
         //Validate that input is an int, and in range
+        //Set inputInt 
         public bool ValidateInput(Menu menu)
         {
             if (!int.TryParse(input, out int result)

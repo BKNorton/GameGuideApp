@@ -9,6 +9,6 @@ namespace GameGuideApp
     class Game 
     {
         public string? name;
-        public Menu gameMenu;
+        public Menu? gameMenu;
     }
 }

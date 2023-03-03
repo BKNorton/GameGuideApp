@@ -30,7 +30,7 @@ namespace GameGuideApp
             {
                 Console.WriteLine($"- {i + 1} : {subMenus[i].menuTitle}");
             }
-            Console.WriteLine("- 0 : Exit/Back");
+            Console.WriteLine("- 0 : Back");
         }
 
         public bool Equals(Menu menu)

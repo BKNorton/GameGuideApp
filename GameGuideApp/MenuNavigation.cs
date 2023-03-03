@@ -17,31 +17,25 @@ namespace GameGuideApp
             exit = false;
         }
 
+        //Takes user input and the current menu's subMenus to navigate
         public void PickMenu(Input input, List<Menu> menus)
         {
+            //if the user wants to exit the program
             if (input.inputInt == 0 && path.Peek().menuTitle != "Main Menu")
-            {
-                GoBack();
-            }
-            else if (input.inputInt == 0)
             {
                 ExitProgram();
             }
+            //If the user wants to go back to the previous menu
+            else if (input.inputInt == 0)
+            {
+                GoBack();
+            }
+            //Select the menu the user chooses
             else
             {
-                //menus[input.inputInt-1].Display();
                 path.Push(menus[input.inputInt-1]);
-            }
-                    
+            }       
         }
-        /*
-        public void PickGame(Input input, List<Game> games)
-        {
-            if (input.inputInt==0) { return; }
-            games[input.inputInt-1].Display();
-            path.Push(games[input.inputInt-1]);
-        }
-        */
 
         public void ExitProgram()
         {

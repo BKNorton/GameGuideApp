@@ -11,6 +11,11 @@ namespace GameGuideApp
         public Halo() 
         {
             name = "Halo";
+            gameMenu = new Menu();
+            {
+                gameMenu.menuTitle = name;
+                gameMenu.prompt = "Select menu";
+            }
         }
     }
 }

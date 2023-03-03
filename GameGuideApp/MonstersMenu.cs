@@ -8,7 +8,6 @@ namespace GameGuideApp
 {
     class MonstersMenu : Menu
     {
-
         public MonstersMenu()
         {
             //Parent Properties
@@ -24,7 +23,6 @@ namespace GameGuideApp
         public void Display()
         {
             base.Display();
-
         }
     }
 }

@@ -22,22 +22,16 @@ namespace GameGuideApp
                 gameMenu.menuTitle = name;
                 gameMenu.prompt = "Select menu";
             }
-            //menuTitle = name;
             
-            //Class Properties
+            //Initiate Menus
             weaponsMenu = new WeaponsMenu();
             monstersMenu = new MonstersMenu();
             materialsMenu = new MaterialsMenu();
 
-            PopulateMenus();
-        } 
-
-        public void PopulateMenus()
-        {
+            //Add Menus
             gameMenu.subMenus.Add(weaponsMenu);
             gameMenu.subMenus.Add(monstersMenu);
             gameMenu.subMenus.Add(materialsMenu);
-        }
- 
+        } 
     }
 }

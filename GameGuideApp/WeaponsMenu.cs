@@ -8,8 +8,6 @@ namespace GameGuideApp
 {
     class WeaponsMenu : Menu
     {
-        
-        
         public WeaponsMenu() 
         {
             //Parent Properties
@@ -25,7 +23,6 @@ namespace GameGuideApp
         public void Display()
         {
             base.Display();
-
         }
     }
 }
