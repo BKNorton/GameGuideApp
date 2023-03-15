@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -23,15 +23,15 @@ namespace GameGuideApp
             {
                 //Display menu and recieve user input
                 nav.path.Peek().Display();
-                //input.ClearInput();
+                input.ClearInput();
                 input.RecieveInput();
 
                 //Display error message until user enters valid input
                 while (!input.ValidateInput(nav.path.Peek()))
                 {
                     input.WriteErrorMessage();
-                    //input.ClearErrorMessage();
-                    //input.ClearInput();
+                    input.ClearErrorMessage();
+                    input.ClearInput();
                     input.RecieveInput();
                 }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    internal class MenuNavigation
+    public class MenuNavigation
     {
         public Stack<Menu> path;
         public bool exit;

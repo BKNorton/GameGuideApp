@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    class Input
+    public class Input
     {
         public string? input;
         public string? errorMessage;
@@ -20,7 +20,7 @@ namespace GameGuideApp
             }
             catch (Exception e)
             {
-                Console.WriteLine("Something went wrong");
+                errorMessage = "Something went wrong";
             }
         }
 

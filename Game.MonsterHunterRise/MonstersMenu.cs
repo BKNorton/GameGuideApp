@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    class WeaponsMenu : Menu
+    public class MonstersMenu : Menu
     {
-        public WeaponsMenu() 
+        public MonstersMenu()
         {
             //Parent Properties
-            menuTitle = "Weapons";
-            prompt = "Select a Weapon";
+            menuTitle = "Monsters";
+            prompt = "Select a Monster";
+            subMenus = new List<Menu>();
 
             //Class Properies
-            subMenus= new List<Menu>();
 
             //Add Menu options
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameGuideApp
 {
-    class MonsterHunterRise : Game
+    public class MonsterHunterRise : Game
     {
         //Menus
         private Menu weaponsMenu;

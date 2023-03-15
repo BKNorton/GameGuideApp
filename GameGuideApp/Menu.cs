@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace GameGuideApp
 {
-    class Menu
+    public class Menu
     {
         public string prompt;
         public string menuTitle;

@@ -7,7 +7,7 @@ using System.Transactions;
 
 namespace GameGuideApp
 {
-    class MainMenu : Menu
+    public class MainMenu : Menu
     {   
         public List<Game> games;
 
