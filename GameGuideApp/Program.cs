@@ -9,7 +9,7 @@ namespace GameGuideApp
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public void Main(string[] args)
         {
             MenuNavigation nav = new MenuNavigation();
             MainMenu mainMenu = new MainMenu();
