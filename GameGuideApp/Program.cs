@@ -9,20 +9,22 @@ namespace GameGuideApp
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             MenuNavigation nav = new MenuNavigation();
             MainMenu mainMenu = new MainMenu();
             Input input = new Input();
 
             //Add main menu into menu path
-            nav.path.Push(mainMenu);
+            //nav.path.Push(mainMenu);
+            nav.AddMenu(mainMenu);
             Console.WriteLine("Game Guide App:");
 
             do
             {
                 //Display menu and recieve user input
-                nav.path.Peek().Display();
+                //nav.path.Peek().Display();
+                nav.DisplayMenu();
                 input.ClearInput();
                 input.RecieveInput();
 

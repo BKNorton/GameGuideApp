@@ -37,6 +37,16 @@ namespace GameGuideApp
             }       
         }
 
+        public void AddMenu(Menu menu)
+        {
+            path.Push(menu);
+        }
+
+        public void DisplayMenu()
+        {
+            path.Peek().Display();
+        }
+
         public void ExitProgram()
         {
             exit = true; 
