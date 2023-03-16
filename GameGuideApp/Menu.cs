@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace GameGuideApp
 {
-    public class Menu
+    public class Menu 
     {
         public string prompt;
         public string menuTitle;
@@ -43,6 +43,11 @@ namespace GameGuideApp
         {
             if (menuTitle == string.Empty) return true;
             else return false;
+        }
+
+        public string GetMenuTitle()
+        {
+            return menuTitle;
         }
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i7coY4lLewlBwiVq/QpT1IMSEkTAwqKb7G0tGwjFiMUVrBmeH7m2hIkwIhCjsu/7+xtSP9bT7YUTJ0sFL8hLgA==",
+  "dgSpecHash": "RRn77yNB5ZbmhQjD0kmecUTWRh6eevT17Fr80Undzh7q4cEGxd3x20Pr7QVWxIslkyU4RQnzFbe+aY2LXGNyjg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideApp\\GameGuideApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kirk\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

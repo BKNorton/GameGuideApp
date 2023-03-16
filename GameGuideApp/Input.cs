@@ -18,7 +18,7 @@ namespace GameGuideApp
             {
                 input = Console.ReadLine();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 errorMessage = "Something went wrong";
             }
@@ -28,15 +28,18 @@ namespace GameGuideApp
         //Set inputInt 
         public bool ValidateInput(Menu menu)
         {
-            if (!int.TryParse(input, out int result)
-                || result < 0 || result > menu.subMenus.Count)
+            if (menu is Menu)
             {
-                errorMessage = "Invalid Input";
-                return false;
+                if (!int.TryParse(input, out int result)
+                    || result < 0 || result > menu.subMenus.Count)
+                {
+                    errorMessage = "Invalid Input";
+                    return false;
+                }
+                inputInt = result;
+                return true;
             }
-            inputInt = result;
-            return true;
-                
+            return false;
         }
 
         public void WriteErrorMessage()

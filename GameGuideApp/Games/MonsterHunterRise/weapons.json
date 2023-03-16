@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "Long Sword",
+        "Description": "Wide and quick strikes. Damaging monsters adds to a 'Spirit Gauge' used to land a final combo that gives a stacking \n attack buff. Allows for cool counters when timed correctly. The Long Sword is one of the best weapons for solo play. \n If you're playing with others, make sure they have at least one level of the Flinch Free armor skill, or you will \n interrupt them.",
+        "Button_Basic": [ "X", "A", "X + A", "LS + X + A (During a combo)", "RT + B (During a combo)", "X (After Special Sheathe)", "RT (After Special Sheathe)", "LT + X (During a combo)", "LT + A (During a combo)" ],
+        "Attack_Basic": [ "Vertical Slash", "Thrust", "Fade Slash", "Directional Fade Slash", "Special Sheathe", "Iai Slash", "Iai Spirit Slash", "Soaring Kick", "Serene Pose" ]
+    },
+    {
+        "Name": "Sword and Shield",
+        "Description": "Like the Long Sword, the Sword & Shield has a lot of potential but is still easy to pick up and use. Experiment \n with all these different combos to find the chain of moves that works for you; and don't forget about guarding.",
+        "Button_Basic": [ "X", "X > X", "X > X > X", "A", "A > A", "A > A > A", "(After attacking) X + A", "LS + A", "X + A", "(While mid-air) X + A", "(After attacking) LS + X + A", "RT + X", "RT", "(While guarding) A", "Hold RT > A + LS down", "(After Backstep) Hold A", "(After Backstep) X", "(After Leaping Slash) X > X > X", "LT + X", "LT + A" ],
+        "Attack_Basic": [ "Chop", "Side Slash", "Sword & Shield Combo", "Lateral Slash", "Return Stroke", "Round Slash", "Super Round Slash", "Shield Attack", "Advancing Slash", "Mid-air Rising Slash", "Round Slash", "Rising Slash", "Guard", "Guard Slash", "Backstep", "Falling Bash", "Leaping Slash", "Perfect Rush", "Falling Shadow", "Windmill" ]
+    },
+    {
+        "Name": "Switch Axe",
+        "Description": "The Switch Axe can change between two different forms – as you'd expect from the name – which means there are a lot \n of possibilities, so it's not recommended to take this one straight out of the starting blocks.",
+        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
+        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+    }
+]
