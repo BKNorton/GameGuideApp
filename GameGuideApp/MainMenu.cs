@@ -14,6 +14,7 @@ namespace GameGuideApp
         //Games
         private Game MonsterHunterRise; //1
         private Game Halo;              //2
+        private Game NoMansSky;         //3
 
         public MainMenu()
         {
@@ -27,10 +28,14 @@ namespace GameGuideApp
             //Initiate Games
             MonsterHunterRise = new MonsterHunterRise();
             Halo = new Halo();
+            NoMansSky = new NoMansSky(); 
+
 
             //Add games
             games.Add(MonsterHunterRise);
             games.Add(Halo);
+            games.Add(NoMansSky);
+
 
             //Add gameMenus to menus
             foreach(Game game in games)

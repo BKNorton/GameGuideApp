@@ -16,7 +16,7 @@ namespace GameGuideApp
         public MonsterHunterRise()
         {
             //Parent Properties
-            name = "MonsterHunterRise";
+            name = "Monster Hunter Rise";
             gameMenu = new Menu();
             {
                 gameMenu.menuTitle = name;

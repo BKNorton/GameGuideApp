@@ -10,6 +10,5 @@ namespace GameGuideApp
     {
         public string? name;
         public Menu? gameMenu;
-
     }
 }

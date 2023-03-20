@@ -21,8 +21,8 @@ namespace GameGuideApp
 
             //Class Properies
             Weapons = new List<Weapon>();
-            WeaponsJsonString = File.ReadAllText(@"C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\Games\MonsterHunterRise\weapons.json");
-            Weapons = JsonConvert.DeserializeObject<List<Weapon>>(WeaponsJsonString);
+            WeaponsDataFile = @"Games\MonsterHunterRise\JSON_weapon.json";
+            Weapons = JsonReader.JsonToObjects<Weapon>(WeaponsDataFile);
 
             //Add Menu options
             foreach (Weapon weapon in Weapons)
@@ -30,11 +30,6 @@ namespace GameGuideApp
                 weapon.menuTitle = weapon.Name;
                 subMenus.Add(weapon);
             }
-        }
-
-        public void Display()
-        {
-            base.Display();
         }
     }
 }
