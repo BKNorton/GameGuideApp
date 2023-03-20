@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameGuideApp
+﻿namespace GameGuideApp
 {
     public class MonstersMenu : Menu
     {
@@ -17,12 +11,7 @@ namespace GameGuideApp
 
             //Class Properies
 
-            //Add Menu options
-        }
-
-        public void Display()
-        {
-            base.Display();
+            //Add Menus
         }
     }
 }

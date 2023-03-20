@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameGuideApp
+﻿namespace GameGuideApp
 {
-    public class Input
+    //Static class to control input for Program
+    public static class Input
     {
-        public string? input;
-        public string? errorMessage;
-        public int inputInt;
+        public static string? input;
+        public static string? errorMessage;
+        public static int inputInt;
 
-        public void RecieveInput()
+        public static void RecieveInput()
         {
             try
             {
@@ -25,34 +20,30 @@ namespace GameGuideApp
         }
 
         //Validate that input is an int, and in range
-        //Set inputInt 
-        public bool ValidateInput(Menu menu)
+        //Set inputInt with valid input
+        public static bool ValidateInput(Menu menu)
         {
-            if (menu is Menu)
+            if (!int.TryParse(input, out int result)
+                || result < 0 || result > menu.subMenus.Count)
             {
-                if (!int.TryParse(input, out int result)
-                    || result < 0 || result > menu.subMenus.Count)
-                {
-                    errorMessage = "Invalid Input";
-                    return false;
-                }
-                inputInt = result;
-                return true;
+                errorMessage = "Invalid Input";
+                return false;
             }
-            return false;
+            inputInt = result;
+            return true;
         }
 
-        public void WriteErrorMessage()
+        public static void WriteErrorMessage()
         {
             Console.WriteLine(errorMessage);
         }
 
-        public void ClearInput()
+        public static void ClearInput()
         {
             input = string.Empty;
         }
 
-        public void ClearErrorMessage()
+        public static void ClearErrorMessage()
         {
             errorMessage = string.Empty;
         }

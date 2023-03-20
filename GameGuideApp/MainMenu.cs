@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
-
-namespace GameGuideApp
+﻿namespace GameGuideApp
 {
     public class MainMenu : Menu
     {   
@@ -31,31 +24,17 @@ namespace GameGuideApp
             NoMansSky = new NoMansSky(); 
 
 
-            //Add games
+            //Add Games
             games.Add(MonsterHunterRise);
             games.Add(Halo);
             games.Add(NoMansSky);
 
 
-            //Add gameMenus to menus
+            //Add Menus
             foreach(Game game in games)
             {
                 subMenus.Add(game.gameMenu);
             }  
-        }
-
-        //Dislplay uses games instead of menus
-        public override void Display()
-        {
-            Console.WriteLine();
-            Console.WriteLine(menuTitle);
-            Console.WriteLine(prompt);
-            
-            for (int i = 0; i < games.Count; i++) 
-            {
-                Console.WriteLine($"- {i + 1} : {games[i].name}");
-            }
-            Console.WriteLine("- 0 : Exit");
         }
     }
 }

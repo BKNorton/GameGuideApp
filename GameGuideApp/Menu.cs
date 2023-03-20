@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-
-namespace GameGuideApp
+﻿namespace GameGuideApp
 {
     public class Menu 
     {
@@ -43,11 +36,6 @@ namespace GameGuideApp
         {
             if (menuTitle == string.Empty) return true;
             else return false;
-        }
-
-        public string GetMenuTitle()
-        {
-            return menuTitle;
         }
     }
 }

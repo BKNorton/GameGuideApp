@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameGuideApp
+﻿namespace GameGuideApp
 {
     public class Program
     {
@@ -13,10 +6,8 @@ namespace GameGuideApp
         {
             MenuNavigation nav = new MenuNavigation();
             MainMenu mainMenu = new MainMenu();
-            Input input = new Input();
 
             //Add main menu into menu path
-            //nav.path.Push(mainMenu);
             nav.AddMenu(mainMenu);
             Console.WriteLine("Game Guide App:");
 
@@ -25,20 +16,21 @@ namespace GameGuideApp
                 //Display menu and recieve user input
                 //nav.path.Peek().Display();
                 nav.DisplayMenu();
-                input.ClearInput();
-                input.RecieveInput();
+                Input.ClearInput();
+                Input.RecieveInput();
 
                 //Display error message until user enters valid input
-                while (!input.ValidateInput(nav.path.Peek()))
+                while (!Input.ValidateInput(nav.path.Peek()))
                 {
-                    input.WriteErrorMessage();
-                    input.ClearErrorMessage();
-                    input.ClearInput();
-                    input.RecieveInput();
+                    Input.WriteErrorMessage();
+                    Console.WriteLine();
+                    Input.ClearErrorMessage();
+                    Input.ClearInput();
+                    Input.RecieveInput();
                 }
 
                 //Select next menu
-                nav.PickMenu(input, nav.path.Peek().subMenus);
+                nav.PickMenu(Input.inputInt, nav.path.Peek().subMenus);
             }
             while (!nav.exit);
         }

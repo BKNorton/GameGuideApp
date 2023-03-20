@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameGuideApp
+﻿namespace GameGuideApp
 {
     public class Weapon : LastMenu
     {
-        //public Menu WeaponMenu;
         public string Name { get; set; }
         public string Description { get; set; }
         public List<string> Button_Basic { get; set; }
@@ -16,8 +9,13 @@ namespace GameGuideApp
 
         public Weapon()
         {
+            //Parent Properties
             prompt = string.Empty;
-            menuTitle = Name;
+            menuTitle = Name!;
+
+            //Class Properties
+            Name = Description = string.Empty;
+            Button_Basic = Attack_Basic = new List<string>();
         }
 
         public override void Display()
@@ -32,6 +30,5 @@ namespace GameGuideApp
             }
             Console.WriteLine("\n- 0 : Back");
         }
-
     }
 }

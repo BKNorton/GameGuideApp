@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameGuideApp
+﻿namespace GameGuideApp
 {
     public class MonsterHunterRise : Game
     {
@@ -22,7 +16,7 @@ namespace GameGuideApp
                 gameMenu.menuTitle = name;
                 gameMenu.prompt = "Select menu";
             }
-            
+
             //Initiate Menus
             weaponsMenu = new WeaponsMenu();
             monstersMenu = new MonstersMenu();
