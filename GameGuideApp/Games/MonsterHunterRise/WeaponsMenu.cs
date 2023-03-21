@@ -1,9 +1,9 @@
 ﻿namespace GameGuideApp
 {
-    public class WeaponsMenu : Menu
+    public class WeaponsMenu : GameMenu
     {
-        public List<Weapon> Weapons;
-        public string WeaponsDataFile;
+        private List<Weapon> Weapons;
+        private string WeaponsDataFile;
    
         public WeaponsMenu() 
         {

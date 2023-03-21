@@ -13,7 +13,7 @@
             name = "Monster Hunter Rise";
             gameMenu.menuTitle = name;
 
-            //Initiate Menus
+            //Class Properties
             weaponsMenu = new WeaponsMenu();
             monstersMenu = new MonstersMenu();
             materialsMenu = new MaterialsMenu();

@@ -23,8 +23,6 @@
             {
                 Console.WriteLine($"- {i + 1} : {subMenus[i].menuTitle}");
             }
-            if (menuTitle == "Main Menu") Console.WriteLine("- 0 : Exit\n");
-            else Console.WriteLine("- 0 : Back\n");
         }
 
         public bool Equals(Menu menu)

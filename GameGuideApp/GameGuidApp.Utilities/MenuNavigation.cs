@@ -3,7 +3,7 @@
     public class MenuNavigation
     {
         public Stack<Menu> path;
-        public bool exit;
+        private bool exit;
 
         public MenuNavigation()
         {
@@ -11,13 +11,13 @@
             exit = false;
         }
 
-        //Takes user input as an int and the current menu's subMenus as parameters 
+        //Takes user input as an int and the current menu's subMenus, as parameters 
         public void PickMenu(int input, List<Menu> menus)
         {
-            //if the user wants to exit the program
-            if (input == 0 && path.Peek().menuTitle == "Main Menu")
+            //If the user wants to exit the program
+            if (input == 0 && path.Count == 1)
             {
-                ExitProgram();
+                exit = true;
             }
             //If the user wants to go back to the previous menu
             else if (input == 0)
@@ -25,10 +25,21 @@
                 GoBack();
             }
             //Select the menu the user chooses
-            else
+            else if (path.Count != 0)
             {
                 path.Push(menus[input-1]);
-            }       
+            }
+            //There are no menus loaded into path
+            else
+            {
+                Input.ChangeErrorMessage("Path has no menus loaded!");
+            }
+        }
+
+        //Get list of subMenus from current menu 
+        public List<Menu> GetSubMenus()
+        {
+            return path.Peek().subMenus;
         }
 
         public void AddMenu(Menu menu)
@@ -41,9 +52,10 @@
             path.Peek().Display();
         }
 
-        public void ExitProgram()
+        //Returns true if user has has selected exit (0) on first menu in path
+        public bool ExitProgram()
         {
-            exit = true; 
+            return exit; 
         }
 
         public void GoBack()

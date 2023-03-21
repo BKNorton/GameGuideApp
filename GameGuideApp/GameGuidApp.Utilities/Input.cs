@@ -3,9 +3,9 @@
     //Static class to control input for Program
     public static class Input
     {
-        public static string? input;
-        public static string? errorMessage;
-        public static int inputInt;
+        private static string? input;
+        private static string? errorMessage;
+        private static int inputInt;
 
         public static void RecieveInput()
         {
@@ -34,6 +34,11 @@
             return true;
         }
 
+        public static int GetInputInt()
+        {
+            return inputInt;
+        }
+
         public static void WriteErrorMessage()
         {
             Console.WriteLine(errorMessage);
@@ -49,6 +54,9 @@
             errorMessage = string.Empty;
         }
 
-
+        internal static void ChangeErrorMessage(string message)
+        {
+            errorMessage = message;
+        }
     }
 }

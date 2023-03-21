@@ -2,7 +2,7 @@
 {
     public class MainMenu : Menu
     {   
-        public List<Game> games;
+        private List<Game> games;
 
         //Games
         private Game MonsterHunterRise; //1
@@ -23,12 +23,10 @@
             Halo = new Halo();
             NoMansSky = new NoMansSky(); 
 
-
             //Add Games
             games.Add(MonsterHunterRise);
             games.Add(Halo);
             games.Add(NoMansSky);
-
 
             //Add Menus
             foreach(Game game in games)
@@ -37,10 +35,10 @@
             }  
         }
 
-        //public override void Display()
-        //{
-        //    base.Display();
-        //    Console.WriteLine("- 0 : Exit\n");
-        //}
+        public override void Display()
+        {
+            base.Display();
+            Console.WriteLine("- 0 : Exit\n");
+        }
     }
 }

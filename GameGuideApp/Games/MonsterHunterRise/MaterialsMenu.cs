@@ -1,6 +1,6 @@
 ﻿namespace GameGuideApp
 {
-    public class MaterialsMenu : Menu
+    public class MaterialsMenu : GameMenu
     {
         public MaterialsMenu()
         {

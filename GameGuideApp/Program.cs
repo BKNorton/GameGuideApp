@@ -29,9 +29,9 @@
                 }
 
                 //Select next menu
-                nav.PickMenu(Input.inputInt, nav.path.Peek().subMenus);
+                nav.PickMenu(Input.GetInputInt(), nav.GetSubMenus());
             }
-            while (!nav.exit);
+            while (!nav.ExitProgram());
         }
     }
 }

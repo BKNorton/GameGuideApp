@@ -1,6 +1,6 @@
 ﻿namespace GameGuideApp
 {
-    public class Weapon : Menu
+    public class Weapon : LastMenu
     {
         public string Name { get; set; }
         public string Description { get; set; }
