@@ -11,11 +11,7 @@
         {
             //Parent Properties
             name = "Monster Hunter Rise";
-            gameMenu = new Menu();
-            {
-                gameMenu.menuTitle = name;
-                gameMenu.prompt = "Select menu";
-            }
+            gameMenu.menuTitle = name;
 
             //Initiate Menus
             weaponsMenu = new WeaponsMenu();

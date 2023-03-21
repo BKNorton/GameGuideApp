@@ -14,7 +14,6 @@
             do
             {
                 //Display menu and recieve user input
-                //nav.path.Peek().Display();
                 nav.DisplayMenu();
                 Input.ClearInput();
                 Input.RecieveInput();

@@ -1,6 +1,6 @@
 ﻿namespace GameGuideApp
 {
-    public class Weapon : LastMenu
+    public class Weapon : Menu
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -14,21 +14,22 @@
             menuTitle = Name!;
 
             //Class Properties
-            Name = Description = string.Empty;
-            Button_Basic = Attack_Basic = new List<string>();
+            Name = string.Empty;
+            Description = string.Empty;
+            Button_Basic = new List<string>();
+            Attack_Basic = new List<string>();
         }
 
         public override void Display()
         {
             Console.WriteLine($"\n{Name.ToUpper()} " +
-                $"\n\n--  \t\t\t\t\t\t\t\t\t\t  --\n {Description} " +
-                $"\n--  \t\t\t\t\t\t\t\t\t\t  --\n\n Basic Attacks:\n");
+                $"\n\n-- \n{Description}\n-- \n\n Basic Attacks:\n");
             for (int i = 0; i< Button_Basic.Count; i++)
             {
-                Console.WriteLine(String.Format("  {0, -25} |   {1, -25}", Attack_Basic[i], Button_Basic[i]));
-                Console.WriteLine("  ---------------------------------------------------------------------");
+                Console.WriteLine(String.Format("\t  {0, -25} |\t{1, -25}", Attack_Basic[i], Button_Basic[i]));
+                Console.WriteLine("\t-----------------------------------------------------------------");
             }
-            Console.WriteLine("\n- 0 : Back");
+            Console.WriteLine("\n- 0 : Back\n");
         }
     }
 }

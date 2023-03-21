@@ -9,6 +9,7 @@
 
         public static void RecieveInput()
         {
+            Console.Write("Enter: ");
             try
             {
                 input = Console.ReadLine();
