@@ -5,7 +5,7 @@
         public string prompt;
         public string menuTitle;
         public List<Menu> subMenus;
-
+        
         public Menu() 
         {
             prompt = string.Empty;

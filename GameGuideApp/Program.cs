@@ -19,7 +19,7 @@
                 Input.RecieveInput();
 
                 //Display error message until user enters valid input
-                while (!Input.ValidateInput(nav.path.Peek()))
+                while (!Input.ValidateInput(nav.GetCurrentMenu()))
                 {
                     Input.WriteErrorMessage();
                     Console.WriteLine();

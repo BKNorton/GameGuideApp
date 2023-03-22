@@ -24,12 +24,15 @@
         //Set inputInt with valid input
         public static bool ValidateInput(Menu menu)
         {
+            //Input is invalid
             if (!int.TryParse(input, out int result)
                 || result < 0 || result > menu.subMenus.Count)
             {
                 errorMessage = "Invalid Input";
                 return false;
             }
+
+            //Input is valid
             inputInt = result;
             return true;
         }

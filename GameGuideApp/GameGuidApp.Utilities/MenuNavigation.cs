@@ -2,7 +2,7 @@
 {
     public class MenuNavigation
     {
-        public Stack<Menu> path;
+        private Stack<Menu> path;
         private bool exit;
 
         public MenuNavigation()
@@ -12,34 +12,31 @@
         }
 
         //Takes user input as an int and the current menu's subMenus, as parameters 
+        //0 is used to Back out to last menu, or Exit the program
         public void PickMenu(int input, List<Menu> menus)
         {
             //If the user wants to exit the program
-            if (input == 0 && path.Count == 1)
-            {
-                exit = true;
-            }
+            if (input == 0 && path.Count == 1) exit = true;
+
             //If the user wants to go back to the previous menu
-            else if (input == 0)
-            {
-                GoBack();
-            }
+            else if (input == 0) GoBack();
+
             //Select the menu the user chooses
-            else if (path.Count != 0)
-            {
-                path.Push(menus[input-1]);
-            }
+            else if (path.Count != 0) path.Push(menus[input - 1]);
+
             //There are no menus loaded into path
-            else
-            {
-                Input.ChangeErrorMessage("Path has no menus loaded!");
-            }
+            else Input.ChangeErrorMessage("Path has no menus loaded!");
         }
 
         //Get list of subMenus from current menu 
         public List<Menu> GetSubMenus()
         {
             return path.Peek().subMenus;
+        }
+
+        public Menu GetCurrentMenu()
+        {
+            return path.Peek();
         }
 
         public void AddMenu(Menu menu)

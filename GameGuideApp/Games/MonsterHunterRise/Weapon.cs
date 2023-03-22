@@ -22,13 +22,20 @@
 
         public override void Display()
         {
-            Console.WriteLine($"\n{Name.ToUpper()} " +
-                $"\n\n-- \n{Description}\n-- \n\n Basic Attacks:\n");
+            //Name & Description
+            Console.WriteLine(String.Format("\n{0, 55}\n", Name.ToUpper()) +
+                "--------------------------------------------------------------------------------------------------" +
+                $"\n\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n{Description}\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n\n ");
+            //Basic Attacks
+            Console.WriteLine("Basic Attacks:\n\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
             for (int i = 0; i< Button_Basic.Count; i++)
             {
-                Console.WriteLine(String.Format("\t  {0, -25} |\t{1, -25}", Attack_Basic[i], Button_Basic[i]));
-                Console.WriteLine("\t-----------------------------------------------------------------");
+                Console.WriteLine(String.Format("\t\t  {0, -30} |  {1, -30}", Attack_Basic[i], Button_Basic[i]));
+                Console.WriteLine("\t\t-----------------------------------------------------------------------");
             }
+            Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
+
+
             Console.WriteLine("\n- 0 : Back\n");
         }
     }

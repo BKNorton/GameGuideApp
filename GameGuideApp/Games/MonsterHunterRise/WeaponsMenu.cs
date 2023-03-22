@@ -13,7 +13,7 @@
             subMenus = new List<Menu>();
 
             //Class Properies
-            WeaponsDataFile = @"Games\MonsterHunterRise\JSON_weapon.json";
+            WeaponsDataFile = @"Games\MonsterHunterRise\JSON_weapons.json";
             Weapons = JsonReader.JsonFileToObjects<Weapon>(WeaponsDataFile);
 
             //Add Menus
