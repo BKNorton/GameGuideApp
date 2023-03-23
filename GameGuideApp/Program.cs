@@ -7,10 +7,12 @@
             MenuNavigation nav = new MenuNavigation();
             MainMenu mainMenu = new MainMenu();
 
-            //Add main menu into menu path
+            //Add mainMenu as the first menu in the path
             nav.AddMenu(mainMenu);
-            Console.WriteLine("Game Guide App:");
 
+            
+
+            //Master loop
             do
             {
                 //Display menu and recieve user input
@@ -30,6 +32,7 @@
 
                 //Select next menu
                 nav.PickMenu(Input.GetInputInt(), nav.GetSubMenus());
+                Console.WriteLine("\n\n\n");
             }
             while (!nav.ExitProgram());
         }

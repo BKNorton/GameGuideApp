@@ -37,8 +37,16 @@
 
         public override void Display()
         {
+            //Display app title
+            //Console.WriteLine("Game Guide App:");
+            Console.WriteLine(String.Format("{0,-30}",
+                String.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
+            Console.WriteLine(String.Format("{0,-30}", 
+                String.Format("{0," + ((30 + 19) / 2).ToString() + "}", "|  GAME GUIDE APP  |")));
+            Console.WriteLine(String.Format("{0,-30}", 
+                String.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
             base.Display();
-            Console.WriteLine("- 0 : Exit\n");
+            Console.WriteLine("  - 0 :  Exit\n");
         }
     }
 }

@@ -16,12 +16,12 @@
             "Thunderbright": 1,
             "Icebright": 1
         },
-        "Tips_Gear": [ "Almudron has many knockback attacks. Use weapons to prevent knockback (Dual Blades, \n\n\tSwitch Axe, Huntin Horn)", "Muck Resistance skill will give you an advantage when moving through large piles of mud" ],
-        "Tips_Combat": [ "After Almudron's mud ball tail attack, he'll stop moving for several seconds. Utilize this time by getting off as many attacks as possible.", "To stop Almudron's mud ball attack, try using Flash Bombs. If executed correctly, the monster will drop the ball.", "While the Golden Mud Piles will deal damage while you're standing inside of it, the damage will stop as soon as you step out - so aim to get out as quickly as possible!" ]
+        "Tips_Gear": [ "Almudron has many knockback attacks. Use weapons to prevent knockback (Dual Blades, \n\t Switch Axe, Huntin Horn)", "Muck Resistance skill will give you an advantage when moving through large piles of \n\t mud" ],
+        "Tips_Combat": [ "After Almudron's mud ball tail attack, he'll stop moving for several seconds. Utilize \n\t this time by getting off as many attacks as possible.", "To stop Almudron's mud ball attack, try using Flash Bombs. If executed correctly, the \n\t monster will drop the ball.", "While the Golden Mud Piles will deal damage while you're standing inside of it, the \n\t damage will stop as soon as you step out - so aim to get out as quickly as possible!" ]
     },
     {
         "Name": "Barroth",
-        "Description": "Barroth usually remain beneath the mud, perhaps to shield themselves from heat; they are even known to attack by flinging mud. They will charge in a frenzy at anything that disturbs their bogs.",
+        "Description": "\tBarroth usually remain beneath the mud, perhaps to shield themselves from heat; they \n\n\tare even known to attack by flinging mud. They will charge in a frenzy at anything \n\n\tthat disturbs their bogs.",
         "WeakPoints": [ "Front Legs", "Back Legs", "Tail" ],
         "Ailments": {
             "Poison": 3,
@@ -35,12 +35,12 @@
             "Thunderbright": 1,
             "Icebright": 1
         },
-        "Tips_Gear": [ "Use weapons that utilize both Fire and Ice elements.", "Mudbeetles, it will negate Barroth's mud armor.", "Nullberries will combat the Waterblight you'll receive when coming in contact with Barroth's mud piles." ],
-        "Tips_Combat": [ "Barroth is covered in mud, aim to break some of this mud coating off.", "Barroth's charge attack is something that you'll want to avoid at all cost. Thankfully this attack is rather easy to predict as Barroth will make a loud hissing noise before he launches his charge attack.", "Barroth's head is very resistant to attacks, so you'll probably want to avoiding aiming for this area unless you've got the likes of a Charge Blade or Hammer.", "As Barroth shakes, be sure to avoid the mud piles that happen to fling off! Coming into contact with these mud piles as they'll leave you restrained and effected by Waterblight." ]
+        "Tips_Gear": [ "Use weapons that utilize both Fire and Ice elements.", "Mudbeetles, it will negate Barroth's mud armor.", "Nullberries will combat the Waterblight you'll receive when coming in contact with \n\t Barroth's mud piles." ],
+        "Tips_Combat": [ "Barroth is covered in mud, aim to break some of this mud coating off.", "Barroth's charge attack is something that you'll want to avoid at all cost. \n\t Thankfully this attack is rather easy to predict as Barroth will make a loud hissing \n\t noise before he launches his charge attack.", "Barroth's head is very resistant to attacks, so you'll probably want to avoiding \n\t aiming for this area unless you've got the likes of a Charge Blade or Hammer.", "As Barroth shakes, be sure to avoid the mud piles that happen to fling off! Coming \n\t into contact with these mud piles as they'll leave you restrained and effected by \n\t Waterblight." ]
     },
     {
         "Name": "Bazelgeuse",
-        "Description": "A nefarious flying wyvern that travels the world in search of prey. It scatters its own explosive scales over a wide area to prey on whatever gets caught in the blast. In some places, this has earned it the nickname \"Bomber Wyvern.\"",
+        "Description": "\tA nefarious flying wyvern that travels the world in search of prey. It scatters its \n\n\town explosive scales over a wide area to prey on whatever gets caught in the blast. \n\n\tIn some places, this has earned it the nickname \"Bomber Wyvern.\"",
         "WeakPoints": [ "Head", "Tail", "Abdomen", "Thunder" ],
         "Ailments": {
             "Poison": 1,

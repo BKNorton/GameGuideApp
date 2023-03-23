@@ -22,7 +22,7 @@
         "Name": "Hammer",
         "Description": "\tAnother weapon that hits hard, the Hammer is a simple weapon to use but it's \n\n\timportant to get the timings right because of how slow it is. The combos aren't too \n\n\tdifficult thankfully, but remember to charge the hammer whenever you get the \n\n\topportunity mid-fight.",
         "Button_Basic": [ "X", "X > X > X", "Hold RT", "(While Charging) A", "(While Charging) X", "A", "LS + Hold RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Overhead Smash", "Upswing", "Charge", "Charge Switch", "Charged Follow-up", "Side Smash", "Spinning Attack", "Spinning Bludgeon/Dash Breaker", "Impact Crater" ]
+        "Attack_Basic": [ "Overhead Smash", "Upswing", "Charge", "Charge Switch", "Charged Follow-up", "Side Smash", "Spinning Attack", "Spin Bludgeon/Dash Breaker", "Impact Crater" ]
     }
 
 ]

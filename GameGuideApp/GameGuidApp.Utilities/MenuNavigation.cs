@@ -16,7 +16,11 @@
         public void PickMenu(int input, List<Menu> menus)
         {
             //If the user wants to exit the program
-            if (input == 0 && path.Count == 1) exit = true;
+            if (input == 0 && path.Count == 1)
+            {
+                exit = true;
+                Console.WriteLine("\nExiting Program!");
+            }
 
             //If the user wants to go back to the previous menu
             else if (input == 0) GoBack();

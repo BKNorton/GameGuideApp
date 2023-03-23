@@ -5,7 +5,7 @@
         public override void Display()
         {
             base.Display();
-            Console.WriteLine("- 0 : Back\n");
+            Console.WriteLine("  - 0 :  Back\n");
         }
     }
 }

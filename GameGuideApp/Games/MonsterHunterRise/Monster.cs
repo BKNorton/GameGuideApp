@@ -29,39 +29,44 @@ namespace GameGuideApp
         {
             //Name & Description
             Console.WriteLine(String.Format("\n{0, 55}\n", Name.ToUpper()) +
-                "--------------------------------------------------------------------------------------------------" +
-                $"\n\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n{Description}\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
+                "__________________________________________________________________________________________________" +
+                $"\n\n >\t\t\t\t\t\t\t\t\t\t\t\t< \n{Description}\n >\t\t\t\t\t\t\t\t\t\t\t\t<");
+
             //WeakPoints
-            Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
-            Console.WriteLine("Weak Points:\n");
+            Console.WriteLine("\n\n Weak Points:\n");
+            Console.WriteLine(" >\t\t\t\t\t\t\t\t\t\t\t\t<\n");
             foreach ( var item in WeakPoints )
             {
-                Console.WriteLine($"   - {item}");
+                Console.WriteLine(String.Format("{0, 8} {1, -8}", "-", item));
             }
-            Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
+            Console.WriteLine(" >\t\t\t\t\t\t\t\t\t\t\t\t< \n");
+
             //Ailments
             //Console.WriteLine("Ailments: \n\n");
             //foreach (var item in Ailments)
             //{
             //    Console.WriteLine(String.Format("   - {0, -10} :  {1, -10}", item.Value, item.Key));
             //}
-            //Geat Tips
-            Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
-            Console.WriteLine("\nGear Tips:\n");
+
+            //Gear Tips
+            Console.WriteLine("\n Gear Tips:\n");
+            Console.WriteLine(" >\t\t\t\t\t\t\t\t\t\t\t\t<");
             foreach (var item in Tips_Gear)
             {
-                Console.WriteLine($"   - {item}");
+                Console.WriteLine(String.Format("{0, 128} {1, -128}", "[]", item));
             }
-            Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
+            Console.WriteLine(" >\t\t\t\t\t\t\t\t\t\t\t\t< \n");
+
             //Combat Tips
-            Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
-            Console.WriteLine("\nCombat Tips:\n");
-            foreach (var item in Tips_Gear)
+            Console.WriteLine("\n Combat Tips:\n");
+            Console.WriteLine(" >\t\t\t\t\t\t\t\t\t\t\t\t<");
+            foreach (var item in Tips_Combat)
             {
-                Console.WriteLine($"   - {item}");
+                Console.WriteLine(String.Format("{0, 128} {1, -128}", "[]", item));
             }
-            Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
-            Console.WriteLine("\n- 0 : Back\n");
+            Console.WriteLine(" >\t\t\t\t\t\t\t\t\t\t\t\t< \n");
+
+            Console.WriteLine("\n  - 0 :  Back\n");
         }
     }
 }

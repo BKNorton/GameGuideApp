@@ -30,13 +30,14 @@
             Console.WriteLine("Basic Attacks:\n\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
             for (int i = 0; i< Button_Basic.Count; i++)
             {
-                Console.WriteLine(String.Format("\t\t  {0, -30} |  {1, -30}", Attack_Basic[i], Button_Basic[i]));
-                Console.WriteLine("\t\t-----------------------------------------------------------------------");
+                Console.WriteLine(String.Format("\t\t  {0, 28}  |  {1, -28}", Attack_Basic[i], Button_Basic[i]));
+                Console.WriteLine(String.Format(String.Format("{0,-100}",
+                String.Format("{0," + ((100 + 71) / 2).ToString() + "}", "-----------------------------------------------------------------------")))); 
             }
             Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
 
 
-            Console.WriteLine("\n- 0 : Back\n");
+            Console.WriteLine("\n  - 0 :  Back\n");
         }
     }
 }
