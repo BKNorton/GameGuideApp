@@ -36,7 +36,10 @@ INSTRUCTIONS:
 
       -	Select the game you would like to see a game guide for (Currently there is only information for the
 
-	game Monster Hunter Rise)
+	game, Monster Hunter Rise)
+
+
+      -	To select a menu, type in the number and press enter
 
 
       -	Select what information you would like to view about the game. (Currently there is only information
