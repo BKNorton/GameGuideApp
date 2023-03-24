@@ -5,12 +5,10 @@
         public static void Main(string[] args)
         {
             MenuNavigation nav = new MenuNavigation();
-            MainMenu mainMenu = new MainMenu();
+            Menu mainMenu = new MainMenu();
 
             //Add mainMenu as the first menu in the path
             nav.AddMenu(mainMenu);
-
-            
 
             //Master loop
             do

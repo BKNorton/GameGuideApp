@@ -1,5 +1,6 @@
 ﻿namespace GameGuideApp
 {
+    //Takes a Stack of Menus to navigate with 
     public class MenuNavigation
     {
         private Stack<Menu> path;
@@ -53,7 +54,7 @@
             path.Peek().Display();
         }
 
-        //Returns true if user has has selected exit (0) on first menu in path
+        //Returns true if user has selected exit (0) on first menu in path
         public bool ExitProgram()
         {
             return exit; 

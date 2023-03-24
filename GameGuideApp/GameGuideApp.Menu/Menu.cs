@@ -16,10 +16,10 @@
         public virtual void Display()
         {
             Console.WriteLine();
-            Console.WriteLine(String.Format("{0,-30}",
-                String.Format("{0," + ((30 + menuTitle.Length) / 2).ToString() + "}", menuTitle)));
-            Console.WriteLine(String.Format("{0,-30}",
-                String.Format("{0," + ((30 + prompt.Length) / 2).ToString() + "}", prompt)));
+            Console.WriteLine(String.Format("{0,-32}",
+                String.Format("{0," + ((32 + menuTitle.Length) / 2).ToString() + "}", menuTitle)));
+            Console.WriteLine(String.Format("{0,-32}",
+                String.Format("{0," + ((32 + prompt.Length) / 2).ToString() + "}", prompt)));
             Console.WriteLine("_________________________________\n");
 
             for (int i = 0; i < subMenus.Count; i++)

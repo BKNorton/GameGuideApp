@@ -24,7 +24,7 @@
         {
             //Name & Description
             Console.WriteLine(String.Format("\n{0, 55}\n", Name.ToUpper()) +
-                "--------------------------------------------------------------------------------------------------" +
+                "__________________________________________________________________________________________________" +
                 $"\n\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n{Description}\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n\n ");
             //Basic Attacks
             Console.WriteLine("Basic Attacks:\n\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");

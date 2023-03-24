@@ -15,5 +15,5 @@ C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.
 C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\ref\GameGuideApp.dll
 C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\obj\Debug\net7.0\GameGuideApp.csproj.CopyComplete
-C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\Games\MonsterHunterRise\JSON_monsters.json
-C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\Games\MonsterHunterRise\JSON_weapons.json
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\Games\MonsterHunterRise\Data\JSON_monsters.json
+C:\Users\Kirk\Documents\GameGuideApp\GameGuideApp\bin\Debug\net7.0\Games\MonsterHunterRise\Data\JSON_weapons.json

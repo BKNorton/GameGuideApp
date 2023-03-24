@@ -41,8 +41,8 @@
             //Console.WriteLine("Game Guide App:");
             Console.WriteLine(String.Format("{0,-30}",
                 String.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
-            Console.WriteLine(String.Format("{0,-30}", 
-                String.Format("{0," + ((30 + 19) / 2).ToString() + "}", "|  GAME GUIDE APP  |")));
+            Console.WriteLine(String.Format("{0,-32}", 
+                String.Format("{0," + ((32 + 19) / 2).ToString() + "}", "|  GAME GUIDE APP  |")));
             Console.WriteLine(String.Format("{0,-30}", 
                 String.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
             base.Display();

@@ -12,10 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Games\MonsterHunterRise\JSON_monsters.json">
+    <None Update="Games\MonsterHunterRise\Data\JSON_monsters.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Games\MonsterHunterRise\JSON_weapons.json">
+    <None Update="Games\MonsterHunterRise\Data\JSON_weapons.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
