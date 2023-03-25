@@ -6,7 +6,7 @@ DESCRIPTION:
  
 	a previous menu, or exit the program. All game data is saved and read from a JSON file. This program is
  
-	designed to be able to add any number of games you would like to the app. 
+	designed to be able to add any number of games you would like to. 
 
 
 
