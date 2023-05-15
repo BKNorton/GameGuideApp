@@ -1,12 +1,17 @@
 ﻿namespace GameGuideApp
 {
-    //Static class to control input for Program
+    /// <summary>
+    /// Static class that has methods to prompt and recieve and validate user input.
+    /// </summary>
     public static class Input
     {
         private static string? input;
         private static string? errorMessage;
         private static int inputInt;
 
+        /// <summary>
+        /// Promts and recieves user input.
+        /// </summary>
         public static void RecieveInput()
         {
             Console.Write("Enter: ");
@@ -14,18 +19,22 @@
             {
                 input = Console.ReadLine();
             }
-            catch (Exception)
+            catch (IOException)
             {
                 errorMessage = "Something went wrong";
             }
         }
 
-        //Validate that input is an int, and in range
+        /// <summary>
+        /// Validate that input is an int, and in range of subMenu Length. Sets inputInt to input if it is a valid integer.
+        /// </summary>
+        /// <param name="menu"></param>
+        /// <returns></returns>
         //Set inputInt with valid input
         public static bool ValidateInput(Menu menu)
         {
             //Input is invalid
-            if (!int.TryParse(input, out int result)
+            if ((!int.TryParse(input, out int result))
                 || result < 0 || result > menu.subMenus.Count)
             {
                 errorMessage = "Invalid Input";
@@ -57,7 +66,7 @@
             errorMessage = string.Empty;
         }
 
-        internal static void ChangeErrorMessage(string message)
+        public static void ChangeErrorMessage(string message)
         {
             errorMessage = message;
         }

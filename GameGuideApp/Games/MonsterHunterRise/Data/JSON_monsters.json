@@ -56,6 +56,25 @@
         },
         "Tips_Gear": [ "Increase your Fire resistance to 20 to become immune to Fireblight." ],
         "Tips_Combat": [ "Deals Fire damage and inflicts Fireblight" ]
+    },
+    {
+        "Name": "fart Monster",
+        "Description": "\tA nefarious flying wyvern that travels the world in search of prey. It scatters its \n\n\town explosive scales over a wide area to prey on whatever gets caught in the blast. \n\n\tIn some places, this has earned it the nickname \"Bomber Wyvern.\"",
+        "WeakPoints": [ "Head", "Tail", "Abdomen", "Thunder" ],
+        "Ailments": {
+            "Poison": 1,
+            "Stun": 0,
+            "Paralysis": 1,
+            "Sleep": 1,
+            "Blast": 0,
+            "Exhaust": 1,
+            "Firebright": 1,
+            "Waterbright": 1,
+            "Thunderbright": 2,
+            "Icebright": 1
+        },
+        "Tips_Gear": [ "Increase your Fire resistance to 20 to become immune to Fireblight." ],
+        "Tips_Combat": [ "Deals Fire damage and inflicts Fireblight" ]
     }
 
 ]

@@ -1,14 +1,18 @@
 ﻿namespace GameGuideApp
 {
+    
     public class MainMenu : Menu
     {   
-        private List<Game> games;
-
         //Games
         private Game MonsterHunterRise; //1
         private Game Halo;              //2
         private Game NoMansSky;         //3
 
+        private List<Game> games;
+
+        /// <summary>
+        /// This is the first Menu. All Games must be added to the class.
+        /// </summary>
         public MainMenu()
         {
             //Parent Properties
@@ -38,14 +42,15 @@
         public override void Display()
         {
             //Display app title
-            //Console.WriteLine("Game Guide App:");
             Console.WriteLine(String.Format("{0,-30}",
                 String.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
             Console.WriteLine(String.Format("{0,-32}", 
                 String.Format("{0," + ((32 + 19) / 2).ToString() + "}", "|  GAME GUIDE APP  |")));
             Console.WriteLine(String.Format("{0,-30}", 
                 String.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
-            base.Display();
+
+            //Displays menuTitle and prompt and subMenus - menuTitle
+            base.Display(); 
             Console.WriteLine("  - 0 :  Exit\n");
         }
     }
