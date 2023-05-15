@@ -13,6 +13,12 @@
         "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
     },
     {
+        "Name": "Sword and Shield",
+        "Description": "\tLike the Long Sword, the Sword & Shield has a lot of potential but is still easy \n\n\tto pick up and use. Experiment with all these different combos to find the chain \n\n\tof moves that works for you; and don't forget about guarding.",
+        "Button_Basic": [ "X", "X > X", "X > X > X", "A", "A > A", "A > A > A", "(After attacking) X + A", "LS + A", "X + A", "(While mid-air) X + A", "(After attacking) LS + X + A", "RT + X", "RT", "(While guarding) A", "Hold RT > A + LS down", "(After Backstep) Hold A", "(After Backstep) X", "(After Leaping Slash) X > X > X", "LT + X", "LT + A" ],
+        "Attack_Basic": [ "Chop", "Side Slash", "Sword & Shield Combo", "Lateral Slash", "Return Stroke", "Round Slash", "Super Round Slash", "Shield Attack", "Advancing Slash", "Mid-air Rising Slash", "Round Slash", "Rising Slash", "Guard", "Guard Slash", "Backstep", "Falling Bash", "Leaping Slash", "Perfect Rush", "Falling Shadow", "Windmill" ]
+    },
+    {
         "Name": "Hammer",
         "Description": "\tAnother weapon that hits hard, the Hammer is a simple weapon to use but it's \n\n\timportant to get the timings right because of how slow it is. The combos aren't too \n\n\tdifficult thankfully, but remember to charge the hammer whenever you get the \n\n\topportunity mid-fight.",
         "Button_Basic": [ "X", "X > X > X", "Hold RT", "(While Charging) A", "(While Charging) X", "A", "LS + Hold RT", "LT + X", "LT + A" ],
@@ -77,17 +83,5 @@
         "Description": "\tThe light bowgun is the simplest of the three ranged weapons. You fight from a decent range using the light bowgun, and combine different ammo types to whale on a monster with relative safety. You also retain a lot of mobility with the light bowgun. It doesn’t deal a ton of damage, meaning you’ll need to spend a lot of time attacking the boss rather than dodging, but it’s a great way to watch a monster and anticipate its moves.",
         "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
         "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
-    },
-    {
-        "Name": "Sword and Shield",
-        "Description": "\tLike the Long Sword, the Sword & Shield has a lot of potential but is still easy \n\n\tto pick up and use. Experiment with all these different combos to find the chain \n\n\tof moves that works for you; and don't forget about guarding.",
-        "Button_Basic": [ "X", "X > X", "X > X > X", "A", "A > A", "A > A > A", "(After attacking) X + A", "LS + A", "X + A", "(While mid-air) X + A", "(After attacking) LS + X + A", "RT + X", "RT", "(While guarding) A", "Hold RT > A + LS down", "(After Backstep) Hold A", "(After Backstep) X", "(After Leaping Slash) X > X > X", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Chop", "Side Slash", "Sword & Shield Combo", "Lateral Slash", "Return Stroke", "Round Slash", "Super Round Slash", "Shield Attack", "Advancing Slash", "Mid-air Rising Slash", "Round Slash", "Rising Slash", "Guard", "Guard Slash", "Backstep", "Falling Bash", "Leaping Slash", "Perfect Rush", "Falling Shadow", "Windmill" ]
-    },
-    {
-        "Name": "Sword Shield",
-        "Description": "\tLike the Long Sword, the Sword & Shield has a lot of potential but is still easy \n\n\tto pick up and use. Experiment with all these different combos to find the chain \n\n\tof moves that works for you; and don't forget about guarding.",
-        "Button_Basic": [ "X", "X > X", "X > X > X", "A", "A > A", "A > A > A", "(After attacking) X + A", "LS + A", "X + A", "(While mid-air) X + A", "(After attacking) LS + X + A", "RT + X", "RT", "(While guarding) A", "Hold RT > A + LS down", "(After Backstep) Hold A", "(After Backstep) X", "(After Leaping Slash) X > X > X", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Chop", "Side Slash", "Sword & Shield Combo", "Lateral Slash", "Return Stroke", "Round Slash", "Super Round Slash", "Shield Attack", "Advancing Slash", "Mid-air Rising Slash", "Round Slash", "Rising Slash", "Guard", "Guard Slash", "Backstep", "Falling Bash", "Leaping Slash", "Perfect Rush", "Falling Shadow", "Windmill" ]
     }
 ]

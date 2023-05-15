@@ -6,17 +6,17 @@
         "Button_Basic": [ "X", "A", "X + A", "LS + X + A (During a combo)", "RT + B (During a combo)", "X (After Special Sheathe)", "RT (After Special Sheathe)", "LT + X (During a combo)", "LT + A (During a combo)" ],
         "Attack_Basic": [ "Vertical Slash", "Thrust", "Fade Slash", "Directional Fade Slash", "Special Sheathe", "Iai Slash", "Iai Spirit Slash", "Soaring Kick", "Serene Pose" ]
     },
-    //{
-    //    "Name": "Sword and Shield",
-    //    "Description": "\tLike the Long Sword, the Sword & Shield has a lot of potential but is still easy \n\n\tto pick up and use. Experiment with all these different combos to find the chain \n\n\tof moves that works for you; and don't forget about guarding.",
-    //    "Button_Basic": [ "X", "X > X", "X > X > X", "A", "A > A", "A > A > A", "(After attacking) X + A", "LS + A", "X + A", "(While mid-air) X + A", "(After attacking) LS + X + A", "RT + X", "RT", "(While guarding) A", "Hold RT > A + LS down", "(After Backstep) Hold A", "(After Backstep) X", "(After Leaping Slash) X > X > X", "LT + X", "LT + A" ],
-    //    "Attack_Basic": [ "Chop", "Side Slash", "Sword & Shield Combo", "Lateral Slash", "Return Stroke", "Round Slash", "Super Round Slash", "Shield Attack", "Advancing Slash", "Mid-air Rising Slash", "Round Slash", "Rising Slash", "Guard", "Guard Slash", "Backstep", "Falling Bash", "Leaping Slash", "Perfect Rush", "Falling Shadow", "Windmill" ]
-    //},
     {
         "Name": "Switch Axe",
         "Description": "\tThe Switch Axe can change between two different forms, as you'd expect from the \n\n\tname, which means there are a lot of possibilities, so it's not recommended to \n\n\ttake this one straight out of the starting blocks.",
         "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
         "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+    },
+    {
+        "Name": "Sword and Shield",
+        "Description": "\tLike the Long Sword, the Sword & Shield has a lot of potential but is still easy \n\n\tto pick up and use. Experiment with all these different combos to find the chain \n\n\tof moves that works for you; and don't forget about guarding.",
+        "Button_Basic": [ "X", "X > X", "X > X > X", "A", "A > A", "A > A > A", "(After attacking) X + A", "LS + A", "X + A", "(While mid-air) X + A", "(After attacking) LS + X + A", "RT + X", "RT", "(While guarding) A", "Hold RT > A + LS down", "(After Backstep) Hold A", "(After Backstep) X", "(After Leaping Slash) X > X > X", "LT + X", "LT + A" ],
+        "Attack_Basic": [ "Chop", "Side Slash", "Sword & Shield Combo", "Lateral Slash", "Return Stroke", "Round Slash", "Super Round Slash", "Shield Attack", "Advancing Slash", "Mid-air Rising Slash", "Round Slash", "Rising Slash", "Guard", "Guard Slash", "Backstep", "Falling Bash", "Leaping Slash", "Perfect Rush", "Falling Shadow", "Windmill" ]
     },
     {
         "Name": "Hammer",
@@ -27,8 +27,8 @@
     {
         "Name": "Dual Blades",
         "Description": "\tThe dual blades in Monster Hunter Rise are fast and simple. You can slice monsters and move around them very quickly. You can activate Demon Mode, which makes your attacks cost stamina but also makes your hits more powerful. After enough damage in Demon Mode, you’ll charge your gauge and activate Archdemon Mode, which alters some of your attacks and remains active past disabling your Demon Mode buff. ",
-        "Button_Basic": [  ],
-        "Attack_Basic": [  ]
+        "Button_Basic": [],
+        "Attack_Basic": []
     },
     {
         "Name": "Bow",

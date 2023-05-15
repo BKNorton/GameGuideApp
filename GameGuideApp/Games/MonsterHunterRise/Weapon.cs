@@ -37,7 +37,7 @@
             Console.WriteLine("\n--\t\t\t\t\t\t\t\t\t\t\t\t-- \n");
 
 
-            Console.WriteLine("\n  - 0 :  Back\n");
+            Console.WriteLine("\n  - 0 : Back\n");
         }
     }
 }
