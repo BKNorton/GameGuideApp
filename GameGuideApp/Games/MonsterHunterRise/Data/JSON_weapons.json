@@ -83,5 +83,11 @@
         "Description": "\tLike the Long Sword, the Sword & Shield has a lot of potential but is still easy \n\n\tto pick up and use. Experiment with all these different combos to find the chain \n\n\tof moves that works for you; and don't forget about guarding.",
         "Button_Basic": [ "X", "X > X", "X > X > X", "A", "A > A", "A > A > A", "(After attacking) X + A", "LS + A", "X + A", "(While mid-air) X + A", "(After attacking) LS + X + A", "RT + X", "RT", "(While guarding) A", "Hold RT > A + LS down", "(After Backstep) Hold A", "(After Backstep) X", "(After Leaping Slash) X > X > X", "LT + X", "LT + A" ],
         "Attack_Basic": [ "Chop", "Side Slash", "Sword & Shield Combo", "Lateral Slash", "Return Stroke", "Round Slash", "Super Round Slash", "Shield Attack", "Advancing Slash", "Mid-air Rising Slash", "Round Slash", "Rising Slash", "Guard", "Guard Slash", "Backstep", "Falling Bash", "Leaping Slash", "Perfect Rush", "Falling Shadow", "Windmill" ]
+    },
+    {
+        "Name": "Sword Shield",
+        "Description": "\tLike the Long Sword, the Sword & Shield has a lot of potential but is still easy \n\n\tto pick up and use. Experiment with all these different combos to find the chain \n\n\tof moves that works for you; and don't forget about guarding.",
+        "Button_Basic": [ "X", "X > X", "X > X > X", "A", "A > A", "A > A > A", "(After attacking) X + A", "LS + A", "X + A", "(While mid-air) X + A", "(After attacking) LS + X + A", "RT + X", "RT", "(While guarding) A", "Hold RT > A + LS down", "(After Backstep) Hold A", "(After Backstep) X", "(After Leaping Slash) X > X > X", "LT + X", "LT + A" ],
+        "Attack_Basic": [ "Chop", "Side Slash", "Sword & Shield Combo", "Lateral Slash", "Return Stroke", "Round Slash", "Super Round Slash", "Shield Attack", "Advancing Slash", "Mid-air Rising Slash", "Round Slash", "Rising Slash", "Guard", "Guard Slash", "Backstep", "Falling Bash", "Leaping Slash", "Perfect Rush", "Falling Shadow", "Windmill" ]
     }
 ]
