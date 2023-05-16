@@ -51,7 +51,7 @@
 
             //Displays menuTitle and prompt and subMenus - menuTitle
             base.Display(); 
-            Console.WriteLine("  - 0  : Exit\n");
+            Console.WriteLine("    0:  Exit\n");
         }
     }
 }

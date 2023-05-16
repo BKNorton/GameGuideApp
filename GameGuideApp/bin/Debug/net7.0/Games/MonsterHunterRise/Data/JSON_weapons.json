@@ -26,62 +26,62 @@
     },
     {
         "Name": "Dual Blades",
-        "Description": "\tThe dual blades in Monster Hunter Rise are fast and simple. You can slice monsters and move around them very quickly. You can activate Demon Mode, which makes your attacks cost stamina but also makes your hits more powerful. After enough damage in Demon Mode, you’ll charge your gauge and activate Archdemon Mode, which alters some of your attacks and remains active past disabling your Demon Mode buff. ",
-        "Button_Basic": [],
-        "Attack_Basic": []
+        "Description": "\tThe dual blades in Monster Hunter Rise are fast and simple. You can slice \n\n\tmonsters and move around them very quickly. You can activate Demon Mode, which makes \n\n\tyour attacks cost stamina but also makes your hits more powerful. After enough \n\n\tdamage in Demon Mode, you’ll charge your gauge and activate Archdemon Mode, which \n\n\talters some of your attacks and remains active past disabling your Demon Mode buff. ",
+        "Button_Basic": [ "X", "A", "RT", "X + A", "LT + X", "LT + A" ],
+        "Attack_Basic": [ "Double Slash", "Lunging Strike", "Demon Mode", "Blade Dance (Demon Mode)", "Piercing Bind", "Shrouded Vault" ]
     },
     {
         "Name": "Bow",
-        "Description": "\tThe bow isn’t a typical video game bow. It’s more like a shotgun. You can shoot a bunch of bolts up close or a group of bolts from a distance. But the bow is often a bit sluggish and punishing at the start of each Monster Hunter game. You’ll need more powerful perks and better armor before you can really get the most out of it. The bow also uses powerful arrow coatings to really be effective, but you won’t have many until you craft some later in Monster Hunter Rise.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Description": "\tThe bow isn’t a typical video game bow. It’s more like a shotgun. You can shoot \n\n\ta bunch of bolts up close or a group of bolts from a distance. But the bow is often \n\n\ta bit sluggish and punishing at the start of each Monster Hunter game. You’ll \n\n\tneed more powerful perks and better armor before you can really get the most out \n\n\tof it. The bow also uses powerful arrow coatings to really be effective, but you \n\n\twon’t have many until you craft some later in Monster Hunter Rise.",
+        "Button_Basic": [ "LT", "RT", "RT + A", "B", "LT + LS + B", "RT > A", "A", "X + A", "R + X", "R + A" ],
+        "Attack_Basic": [ "Aim", "Shoot", "Arc Shot", "Backstep", "Charging Step", "Power Shot", "Melee Attack", "Dragon Piercer", "Focus Shot", "Herculean Draw" ]
     },
     {
         "Name": "Charge Blade",
-        "Description": "\tThe charge blade is the most complex weapon in Monster Hunter Rise. It involves dealing damage to charge your weapon, storing those charges in your sword, shield, and in phial containers, and then dishing it all out in one large burst. It requires excellent positioning and understanding of each monster.",
+        "Description": "\tThe charge blade is the most complex weapon in Monster Hunter Rise. It involves \n\n\tdealing damage to charge your weapon, storing those charges in your sword, shield, \n\n\tand in phial containers, and then dishing it all out in one large burst. It \n\n\trequires excellent positioning and understanding of each monster.",
         "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
         "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
     },
     {
         "Name": "Great Sword",
-        "Description": "\tThe great sword is probably Monster Hunter’s most famous weapon. It’s what you see on the boxes and in the movie. The huge sword hits extremely hard, but it’s unwieldy. It works on a charge-based system, letting you charge, attack, charge again, attack hard, and then charge one more time to attack the hardest. If you can nail the combo, the damage is incredible, but it requires a ton of patience and confidence.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Description": "\tThe great sword is probably Monster Hunter’s most famous weapon. It’s what you \n\n\tsee on the boxes and in the movie. The huge sword hits extremely hard, but it’s \n\n\tunwieldy. It works on a charge-based system, letting you charge, attack, charge \n\n\tagain, attack hard, and then charge one more time to attack the hardest. If you can \n\n\tnail the combo, the damage is incredible, but it requires a ton of patience and \n\n\tconfidence.",
+        "Button_Basic": [ "X", "Hold X", "(After Charged Slash) LS+Hold X", "After Strong Slash or Strong Sweep) LS+ Hold X", "A", "X + A", "(After Strong Charged Slash) A", "(After Tackle) A", "(While charging) A or (after evade/kick) X", "(While midair) RT", "RT", "RT + X", "LT+ X", "LT + A" ],
+        "Attack_Basic": [ "Overhead Slash", "Charge", "Strong Charged Slash", "True Charged Slash", "Wide Sweep", "Rising Slash", "Strong Wide Sweep", "Leaping Wide Sweep", "Tackle", "Plunging Thrust", "Gaurd", "Kick", "Hunting Edge", "Power Sheathe" ]
     },
     {
         "Name": "Gunlance",
-        "Description": "\tThe gunlance is a combination lance and explosive device. You can stab at the monster and protect yourself with your heavy shield. But you can also detonate your gunlance, firing large shells at monsters and blowing parts of them away. The gunlance is a bit more complex than the lance, which may also make it more engaging if you’re having trouble digging into the more protective style.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Description": "\tThe gunlance is a combination lance and explosive device. You can stab at the \n\n\tmonster and protect yourself with your heavy shield. But you can also detonate your \n\n\tgunlance, firing large shells at monsters and blowing parts of them away. The gunlance \n\n\tis a bit more complex than the lance, which may also make it more engaging if you’re \n\n\thaving trouble digging into the more protective style.",
+        "Button_Basic": ["X", "LS + X", "X + A", "(After Rising Slash) X", "RT", "RT + X", "(After Attack) B", "LT + X", "LT + A" ],
+        "Attack_Basic": [ "Lateral Thrust", "Lunging Upthrust", "Rising Slash", "Overhead Smash", "Guard", "Guard Thrust", "Step", "Hail Cutter", "Guard Edge" ]
     },
     {
         "Name": "Heavy Bowgun",
-        "Description": "\tThe heavy bowgun is one of Monster Hunter Rise’s three ranged weapons. It’s longer range than the light bowgun or the bow, and it deals heavy damage — for a price. Unlike the light bowgun, you need to charge your shots for the heavy bowgun. The longer you charge, the more damage you deal. Paired with some craftable ammo, the heavy bowgun can do some major damage to monsters if you have the patience to wield it.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Description": "\tThe heavy bowgun is one of Monster Hunter Rise’s three ranged weapons. It’s \n\n\tlonger range than the light bowgun or the bow, and it deals heavy damage — for a \n\n\tprice. Unlike the light bowgun, you need to charge your shots for the heavy bowgun. \n\n\tThe longer you charge, the more damage you deal. Paired with some craftable ammo, \n\n\tthe heavy bowgun can do some major damage to monsters if you have the \n\n\tpatience to wield it.",
+        "Button_Basic": [ "LT", "Hold LT", "A", "Hold X", "Hold L + X or B", "X + A", "R + X", "R + A" ],
+        "Attack_Basic": [ "Crosshairs", "Fire", "Load Special Ammo", "Reload", "Select Ammo", "Melee Attack", "Counter Shot", "Free Silkbind Glide" ]
     },
     {
         "Name": "Hunting Horn",
-        "Description": "\tThe hunting horn got a major upgrade in Rise, and it’s one of the best weapons in the game — if you’re willing to learn how it works. You don’t have combos with the hunting horn. Instead, you play notes while dealing damage. Each note correlates to a song, which you can play to buff yourself and your allies. The biggest mistake you can make with the hunting horn is assuming that it’s a weapon only for support. A good horn player is more than capable of tackling a hunt on their own, and they do even better in groups.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Description": "\tThe hunting horn got a major upgrade in Rise, and it’s one of the best weapons \n\n\tin the game — if you’re willing to learn how it works. You don’t have combos with \n\n\tthe hunting horn. Instead, you play notes while dealing damage. Each note correlates \n\n\tto a song, which you can play to buff yourself and your allies. The biggest mistake \n\n\tyou can make with the hunting horn is assuming that it’s a weapon only for support. \n\n\tA good horn player is more than capable of tackling a hunt on their own, \n\n\tand they do even better in groups.",
+        "Button_Basic": [ "X", "A", "X + A", "LS > A or (After Performance) A", "LS > A or (After Performance) A", "LS > X + A", "(After Forward Smash) A", "(Forward Smash/performance) X + A", "(After Crush) X", "RT", "RT > X", "(Full Gauge) RT + X > RT", "LT + X", "LT + A" ],
+        "Attack_Basic": [ "Left Swing", "Right Swing", "Backwards Strike", "Forward Smash", "Crush", "Overhead Smash", "Kick Up The Horn", "Spinning Attack", "Spinning Attack with Handle", "Perform", "Magnificent Trio", "Infernal Melody", "Slide Beat", "Earthshaker" ]
     },
     {
         "Name": "Insect Glaive",
-        "Description": "\tThe insect glaive is one of fanciest Monster Hunter weapons. It’s a double-bladed staff paired with a Kinsect — an insect buddy that helps you in combat. The insect glaive attacks very quickly, but to take full advantage, you need to command your Kinsect to attack various spots on the monster, and then recall the bug to give yourself periodic buffs.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Description": "\tThe insect glaive is one of fanciest Monster Hunter weapons. It’s a double-bladed \n\n\tstaff paired with a Kinsect — an insect buddy that helps you in combat. The \n\n\tinsect glaive attacks very quickly, but to take full advantage, you need to command \n\n\tyour Kinsect to attack various spots on the monster, and then recall the bug to \n\n\tgive yourself periodic buffs.",
+        "Button_Basic": [ "X", "LS + X", "A", "LS + A", "RT + B", "(In mid air) A", "(In mid air) B", "RT", "RT + R", "RT + X", "RT + A or LT + A", "LT + X"],
+        "Attack_Basic": [ "Rising Slash", "Thrust", "Wide Sweep", "Leaping Slash", "Vault", "Aerial Attack", "Jumping Advancing Slash", "Mid-air Evade", "Kinsect: Mark Target", "Kinsect: Fire", "Kinsect: Harvest Extract", "Kinsect: Recall", "Silkbind Vault" ]
     },
     {
         "Name": "Lance",
-        "Description": "\tThe lance is one of the simplest weapons in Monster Hunter Rise. With the lance, you become an immobile tank, able to move very slowly and jab the monster with your long, sharp stick. The lack of mobility affords you a giant shield, which lets you absorb pretty hefty hits from most monsters. It requires patience, but a good lance player rarely takes much damage in a fight.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Description": "\tThe lance is one of the simplest weapons in Monster Hunter Rise. With the lance, \n\n\tyou become an immobile tank, able to move very slowly and jab the monster with \n\n\tyour long, sharp stick. The lack of mobility affords you a giant shield, which \n\n\tlets you absorb pretty hefty hits from most monsters. It requires patience, but a \n\n\tgood lance player rarely takes much damage in a fight.",
+        "Button_Basic": [ "X", "A", "X + A", "RT", "RT + LS + X", "RT + X + A", "RT + A", "LT + X", "LT + A"],
+        "Attack_Basic": [ "Mid Thrust", "High Thrust", "Wide Sweep", "Guard", "Guard Dash", "Dash Attack", "Counter-Thrust", "Power Guard", "Twin Vine", "Anchor Rage" ]
     },
     {
         "Name": "Light Bowgun",
-        "Description": "\tThe light bowgun is the simplest of the three ranged weapons. You fight from a decent range using the light bowgun, and combine different ammo types to whale on a monster with relative safety. You also retain a lot of mobility with the light bowgun. It doesn’t deal a ton of damage, meaning you’ll need to spend a lot of time attacking the boss rather than dodging, but it’s a great way to watch a monster and anticipate its moves.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Description": "\tThe light bowgun is the simplest of the three ranged weapons. You fight from a \n\n\tdecent range using the light bowgun, and combine different ammo types to whale \n\n\ton a monster with relative safety. You also retain a lot of mobility with the \n\n\tlight bowgun. It doesn’t deal a ton of damage, meaning you’ll need to spend a lot of \n\n\ttime attacking the boss rather than dodging, but it’s a great way to watch a monster \n\n\tand anticipate its moves.",
+        "Button_Basic": [ "LT", "RT", "Hold X", "A", "Hold L + X or B", "X + A", "LT + X", "LT + A"],
+        "Attack_Basic": [ "Crosshairs", "Fire", "Reload", "Wyvernblast", "Select Ammo", "Melee Attack", "Silkbind Glide", "Fanning Vault" ]
     }
 ]

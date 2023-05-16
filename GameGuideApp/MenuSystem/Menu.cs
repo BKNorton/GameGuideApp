@@ -41,7 +41,7 @@
             //Display subMenus menuTitle and menu number
             for (int i = 0; i < subMenus.Count; i++)
             {
-                Console.WriteLine(String.Format("{0, -6}{1, 1}{2, -4}", "  - " + (i+1), " : ", subMenus[i].menuTitle + "\n"));
+                Console.WriteLine(String.Format("   {0, 2}{1, 1}{2, -4}", i+1, ":  ", subMenus[i].menuTitle + "\n"));
                 //Console.WriteLine(String.Format("{0,50}", $":  {subMenus[i].menuTitle}\n"));
             }
             //Does not display Exit or Back (0). This must be added to all child classes.
