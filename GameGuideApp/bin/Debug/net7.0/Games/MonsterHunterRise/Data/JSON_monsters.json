@@ -20,6 +20,86 @@
         "Tips_Combat": [ "After Almudron's mud ball tail attack, he'll stop moving for several seconds. Utilize \n\t this time by getting off as many attacks as possible.", "To stop Almudron's mud ball attack, try using Flash Bombs. If executed correctly, the \n\t monster will drop the ball.", "While the Golden Mud Piles will deal damage while you're standing inside of it, the \n\t damage will stop as soon as you step out - so aim to get out as quickly as possible!" ]
     },
     {
+        "Name": "Aknosom",
+        "Description": "\tKnown for its umbrella like appearance, the Aknosom is a highly territorial Bird Wyvern. Bearing flammable venom that burns and lingers on the ground when lit on fire, it is highly encouraged that you draw the beast to water for a much easier fight!",
+        "WeakPoints": [ "Crest", "Wings", "Head", "Water" ],
+        "Ailments": {
+            "Poison": 1,
+            "Stun": 1,
+            "Paralysis": 1,
+            "Sleep": 1,
+            "Blast": 3,
+            "Exhaust": 1,
+            "Firebright": 1,
+            "Waterbright": 2,
+            "Thunderbright": 1,
+            "Icebright": 1
+        },
+        "Tips_Gear": [
+            "When it comes to weapons, Aknosom is weakest to Water and Thunder weapons. However, Water is only really usefull when attacking it's legs, Wings, and Tail, whereas Thunder will be effective across almost all body parts. In terms of Ailments, Arknosom is most susceptible to Blast and Waterblight, Lastlydon't forget to bring some Nulberries, as they'll help against the Fireblight"
+        ],
+        "Tips_Combat": [ "If you start taking fire damage and are completely out of Nullberries, remember to start rolling, as this is a great way to get rid of flames - the longer you're on fire, the more damage you'll take! Upon standing on one leg, prepare for a close-range attack, as this animation will indicate that Aknosom is about to start slashing its wings. When Aknosom begins to fly, be sure to start moving as it's about to start breathing fire! Be prepared for Aknosom's charge attack, as you'll need to be quick on the dodge/wirebug in order to escape its quick movements. Avoid standing too close, as Aknosom's beak attack - which is indicated by rearing and turning its crest into an umbrella. Will slam down in front of it and can be deadly if caught off guard. " ]
+    }, //
+    {
+        "Name": "Anjanath",
+        "Description": "\tThis belligerent monster will attack anything without hesitation. The membrane along its tail fans out when it is provoked - a behavior theorized to be either an act of intimidation or thermoregulation, as it has been known to do so when it breathes fire.",
+        "WeakPoints": [ "Head", "Neck", "Tail" ],
+        "Ailments": {
+            "Poison": 1,
+            "Stun": 1,
+            "Paralysis": 1,
+            "Sleep": 1,
+            "Blast": 0,
+            "Exhaust": 1,
+            "Firebright": 1,
+            "Waterbright": 2,
+            "Thunderbright": 1,
+            "Icebright": 1
+        },
+        "Tips_Gear": [ "Check back soon for more details." ],
+        "Tips_Combat": [ "Check back soon for more details." ]
+    }, //
+    {
+        "Name": "Arzuros",
+        "Description": "\tKnown for their fishing and ability to stand upright while collecting honey, Arzuros' are often found dwelling in humid climates, which is why regions such as the Shrine Ruins and Flooded Forest are such a perfect fit for the large honey-loving creature. However, thanks to it's claws and heavy forearm plating, defeating Arzuros' is a serious matter as they can perform powerful - cart worthy - blows at any moment.",
+        "WeakPoints": [ "Head", "Abdomen", "Rear" ],
+        "Ailments": {
+
+            "Poison": 3,
+            "Stun": 2,
+            "Paralysis": 3,
+            "Sleep": 3,
+            "Blast": 2,
+            "Exhaust": 3,
+            "Firebright": 2,
+            "Waterbright": 1,
+            "Thunderbright": 1,
+            "Icebright": 2
+        },
+        "Tips_Gear": [ "Utilize Fire based weapons, followed shortly by Ice and Thunder based weapons.\n In terms of Ailments, the Arzuros is susceptible to Poison, Stun, Paralysis, Sleep, Blast, Exhaust, and Fireblight." ],
+        "Tips_Combat": [ "The Arzuros has a weak spot for honey! So if you happen to be caught in a grab attack and have honey within your inventory, the Arzuros will steal your honey and quickly let you go.\n If another player is grabbed, throwing the likes of Flash Bombs and traps will cause the monster to let go of the player.\n If you happened to be grabbed, you can free yourself by using wirebugs.\n When shaking its rear, the Arzuros will launch a powerful Hip Attack as he swings towards your direction.\n Don't go standing too close to the Arzuros' rear, as he will frequently fall backwards\n Once the Arzuros starts to swing its arms, back up as quickly as possibly and be sure to dodge the incoming flurry of swiping attacks.\n If you happen to be knocked back, remember to use a wirebug to get straight back up!" ]
+    }, //
+    {
+        "Name": "Barioth",
+        "Description": "\tWyverns that rule the eternally frozen Tundra. Barioth use their forelegs, tail, and their spiked scales to traverse the slippery ice with ease; this ability makes them very difficult to keep up with.",
+        "WeakPoints": [ "Head", "Tail Tip" ],
+        "Ailments": {
+
+            "Poison": 1,
+            "Stun": 1,
+            "Paralysis": 1,
+            "Sleep": 1,
+            "Blast": 2,
+            "Exhaust": 1,
+            "Firebright": 2,
+            "Waterbright": 1,
+            "Thunderbright": 1,
+            "Icebright": 1
+        },
+        "Tips_Gear": [ "Check back soon for more details." ],
+        "Tips_Combat": [ "Check back soon for more details." ]
+    }, //
+    {
         "Name": "Barroth",
         "Description": "\tBarroth usually remain beneath the mud, perhaps to shield themselves from heat; they \n\n\tare even known to attack by flinging mud. They will charge in a frenzy at anything \n\n\tthat disturbs their bogs.",
         "WeakPoints": [ "Front Legs", "Back Legs", "Tail" ],
@@ -39,6 +119,26 @@
         "Tips_Combat": [ "Barroth is covered in mud, aim to break some of this mud coating off.", "Barroth's charge attack is something that you'll want to avoid at all cost. \n\t Thankfully this attack is rather easy to predict as Barroth will make a loud hissing \n\t noise before he launches his charge attack.", "Barroth's head is very resistant to attacks, so you'll probably want to avoiding \n\t aiming for this area unless you've got the likes of a Charge Blade or Hammer.", "As Barroth shakes, be sure to avoid the mud piles that happen to fling off! Coming \n\t into contact with these mud piles as they'll leave you restrained and effected by \n\t Waterblight." ]
     },
     {
+        "Name": "Basarios",
+        "Description": "\tThese juvenile Gravios are famous for their rock-hard carapaces. They often burrow underground, mimicking rocks and savaging oblivious miners. Because their carapaces are tougher than that of a full-grown Gravios, they'll attack a threat by charging at it. They are also known to emit a poisonous gas..",
+        "WeakPoints": [ "Leg", "Abdomen" ],
+        "Ailments": {
+
+            "Poison": 1,
+            "Stun": 1,
+            "Paralysis": 1,
+            "Sleep": 3,
+            "Blast": 2,
+            "Exhaust": 1,
+            "Firebright": 1,
+            "Waterbright": 2,
+            "Thunderbright": 1,
+            "Icebright": 1
+        },
+        "Tips_Gear": [ "Check back soon for more details." ],
+        "Tips_Combat": [ "Check back soon for more details." ]
+    }, //
+    {
         "Name": "Bazelgeuse",
         "Description": "\tA nefarious flying wyvern that travels the world in search of prey. It scatters its \n\n\town explosive scales over a wide area to prey on whatever gets caught in the blast. \n\n\tIn some places, this has earned it the nickname \"Bomber Wyvern.\"",
         "WeakPoints": [ "Head", "Tail", "Abdomen", "Thunder" ],
@@ -57,43 +157,25 @@
         "Tips_Gear": [ "Increase your Fire resistance to 20 to become immune to Fireblight." ],
         "Tips_Combat": [ "Deals Fire damage and inflicts Fireblight" ]
     },
-    //{
-    //    "Name": "fart Monster",
-    //    "Description": "\tA nefarious flying wyvern that travels the world in search of prey. It scatters its \n\n\town explosive scales over a wide area to prey on whatever gets caught in the blast. \n\n\tIn some places, this has earned it the nickname \"Bomber Wyvern.\"",
-    //    "WeakPoints": [ "Head", "Tail", "Abdomen", "Thunder" ],
-    //    "Ailments": {
-    //        "Poison": 1,
-    //        "Stun": 0,
-    //        "Paralysis": 1,
-    //        "Sleep": 1,
-    //        "Blast": 0,
-    //        "Exhaust": 1,
-    //        "Firebright": 1,
-    //        "Waterbright": 1,
-    //        "Thunderbright": 2,
-    //        "Icebright": 1
-    //    },
-    //    "Tips_Gear": [ "Increase your Fire resistance to 20 to become immune to Fireblight." ],
-    //    "Tips_Combat": [ "Deals Fire damage and inflicts Fireblight" ]
-    //},
     {
-        "Name": "deadite",
-        "Description": "\tthe world in search of prey. It scatters its \n\n\town explosive scales over a wide area to prey on whatever gets caught in the blast. \n\n\tIn some places, this has earned it the nickname \"Bomber Wyvern.\"",
-        "WeakPoints": [ "Head", "Tail", "Abdomen", "Thunder" ],
+        "Name": "Bishaten",
+        "Description": "\tBishaten is an expressive Fanged Beast with interesting movement patterns and a variety of tools at its disposal in the form of Persimmons. Its long range options are a bit limited, but it can fling itself across an area quickly, including with its most powerful move.",
+        "WeakPoints": [ "Head", "Tail", "Ice", "Fire" ],
         "Ailments": {
-            "Poison": 1,
-            "Stun": 0,
+
+            "Poison": 0,
+            "Stun": 1,
             "Paralysis": 1,
             "Sleep": 1,
-            "Blast": 0,
+            "Blast": 2,
             "Exhaust": 1,
             "Firebright": 1,
             "Waterbright": 1,
-            "Thunderbright": 2,
-            "Icebright": 1
+            "Thunderbright": 1,
+            "Icebright": 2
         },
-        "Tips_Gear": [ "Increase your Fire resistance to 20 to become immune to Fireblight." ],
-        "Tips_Combat": [ "Deals Fire damage and inflicts Fireblight" ]
-    }
+        "Tips_Gear": [ "Choose a weapon you feel confident in dealing great damage in a short amount of time to topple it over during key moments. Bishaten is weakest to Ice, but is also fairly susceptible to Fire and Blast, so choose a weapon with one of those elements or ailments.\n Bishaten does inflict poison, so Poison Resistance Armor Skill may be worthwhile if you find yourself being poisoned a lot, though this isn’t exactly easy to do in Low Rank." ],
+        "Tips_Combat": [ "When Bishaten covers its eyes, it's getting ready to use a Flashfruit. Guard while facing it, or get far enough away from it to avoid it\n When it’s on its tail and reaching into its mouth, you can deal enough damage to it and cause it to fall over, spilling its fruit on the ground.\n These fruit, Poisonfruit, Flashfruit, and Jumbofruit (heals you), can be picked up and used during this fight.\n You can also knock Bishaten over when it’s grappling to a wall.\n Watch out when it flips up onto a single arm - It will then flip forward in a straight path, up to two times in a row, and can change direction." ]
+    } //
 
 ]

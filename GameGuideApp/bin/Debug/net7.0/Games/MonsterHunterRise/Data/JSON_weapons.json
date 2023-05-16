@@ -39,8 +39,8 @@
     {
         "Name": "Charge Blade",
         "Description": "\tThe charge blade is the most complex weapon in Monster Hunter Rise. It involves \n\n\tdealing damage to charge your weapon, storing those charges in your sword, shield, \n\n\tand in phial containers, and then dishing it all out in one large burst. It \n\n\trequires excellent positioning and understanding of each monster.",
-        "Button_Basic": [ "X > X > X", "X", "(Rapid press) A", "(After 3 Wild Swings) X", "X > Hold LS down + A", "(After Wild Swing) RT", "X + A", "LS + X", "RT", "(After most combos) RT", "LT + X", "LT + A" ],
-        "Attack_Basic": [ "Weak/Side/Forward, Slash", "Overhead Slash", "Wild Swing", "Heavy Axe Slam", "Downward Slash", "Knee Split", "Rising Slash", "Forward Slash", "Morph/Reload", "Morph Slash", "Invincible Gambit", "Switch Charger" ]
+        "Button_Basic": [ "AXE", "", "X", "LS + X", "A", "A > A", "X + A or A > A > A", "(Boosted) X + A or A > A >", "RT", "(Unsheathed) LT + X", "Unsheathed) LT + A", "", "SWORD", "", "A", "X > X", "X > X > X or Hold A > X", "A", "Hold A", "X + A", "(Sword attack) X + A", "(Sword attack) LS + A", "(Element Discharged) R", "RT + X", "RT + A", "While charging Hold X", "RT", "(Unsheathed) LT + X", "(Unsheathed) LT + A"],
+        "Attack_Basic": [ "AXE", "", "Rising Slash", "Dash Slam", "Element Discharge", "Element Discharge 2", "Amped Element Discharge", "Super Element Discharge", "Morph Slash", "Morphing Advance", "Counter Peak Performance", "", "SWORD", "", "Weak Slash", "Return Stroke", "Spinning Slash", "Element Discharge", "Charged Double Slash", "Forward Slash", "Shield Thrust", "Fade Slash", "Element Boost Spinning Slash", "Morph Slash", "Charge", "Condensed Element Slash", "Guard", "Morphing Advance", "Counter Peak Performance" ]
     },
     {
         "Name": "Great Sword",
