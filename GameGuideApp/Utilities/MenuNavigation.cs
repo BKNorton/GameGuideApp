@@ -1,4 +1,6 @@
-﻿namespace GameGuideApp
+﻿using GameGuideApp.MenuSystem;
+
+namespace GameGuideApp
 {
     /// <summary>
     /// Creates a Menu Stack to navigate through the Menus. 
@@ -20,7 +22,7 @@
         public void PickMenu()
         {
             //If the user wants to exit the program
-            if (Input.GetInputInt() == 0 && path.Count == 1)
+            if (Input.GetInput() == "0" && path.Count == 1)
             {
                 exit = true;
                 Console.WriteLine("\nExiting Program!");

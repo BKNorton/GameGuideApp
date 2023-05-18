@@ -1,27 +1,29 @@
-﻿namespace GameGuideApp
+﻿using GameGuideApp.MenuSystem;
+
+namespace GameGuideApp.Games.MonsterHunterRise
 {
     public class MonsterHunterRise : Game
     {
         //Menus
-        private Menu weaponsMenu;
-        private Menu monstersMenu;
-        private Menu materialsMenu;
+        private Menu _weaponsMenu;
+        private Menu _monstersMenu;
+        private Menu _materialsMenu;
 
         public MonsterHunterRise()
         {
             //Parent Properties
-            name = "Monster Hunter Rise";
-            gameMenu.menuTitle = name;
+            Name = "Monster Hunter Rise";
+            GameMenu.menuTitle = Name;
 
             //Class Properties
-            weaponsMenu = new WeaponsMenu();
-            monstersMenu = new MonstersMenu();
-            materialsMenu = new MaterialsMenu();
+            _weaponsMenu = new MenuWeapons();
+            _monstersMenu = new MenuMonsters();
+            _materialsMenu = new MenuMaterials();
 
             //Add Menus
-            gameMenu.subMenus.Add(weaponsMenu);
-            gameMenu.subMenus.Add(monstersMenu);
-            gameMenu.subMenus.Add(materialsMenu);
+            GameMenu.subMenus.Add(_weaponsMenu);
+            GameMenu.subMenus.Add(_monstersMenu);
+            GameMenu.subMenus.Add(_materialsMenu);
         } 
     }
 }

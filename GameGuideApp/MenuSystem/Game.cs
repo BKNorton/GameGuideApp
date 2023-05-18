@@ -1,18 +1,18 @@
-﻿namespace GameGuideApp
+﻿namespace GameGuideApp.MenuSystem
 {
     /// <summary>
     /// This class represents a Game with a GameMenu. 
     /// </summary>
     public class Game
     {
-        public string? name;
-        public GameMenu gameMenu;
+        public string Name;
+        public MenuGame GameMenu;
 
         public Game()
         {
-            gameMenu = new GameMenu();
+            GameMenu = new MenuGame();
             {
-                gameMenu.prompt = "Select menu";
+                GameMenu.prompt = "Select menu";
             }
         }
     }

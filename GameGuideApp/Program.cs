@@ -1,11 +1,13 @@
-﻿namespace GameGuideApp
+﻿using GameGuideApp.MenuSystem;
+
+namespace GameGuideApp
 {
     public class Program
     {
         public static void Main(string[] args)
         {
             MenuNavigation nav = new MenuNavigation();
-            Menu mainMenu = new MainMenu();
+            Menu mainMenu = new MenuMain();
 
             //Add mainMenu as the first menu in the MenuNavigation path
             nav.AddMenu(mainMenu);

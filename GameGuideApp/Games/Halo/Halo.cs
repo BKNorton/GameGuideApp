@@ -1,11 +1,13 @@
-﻿namespace GameGuideApp
+﻿using GameGuideApp.MenuSystem;
+
+namespace GameGuideApp.Games
 {
     public class Halo : Game
     {
         public Halo() 
         {
-            name = "Halo";
-            gameMenu.menuTitle = name;
+            Name = "Halo";
+            GameMenu.menuTitle = Name;
         }
     }
 }

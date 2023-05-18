@@ -1,7 +1,12 @@
-﻿namespace GameGuideApp
+﻿using GameGuideApp.Games;
+using GameGuideApp.Games.MonsterHunterRise;
+
+namespace GameGuideApp.MenuSystem
 {
-    
-    public class MainMenu : Menu
+    /// <summary>
+    /// This is the first Menu. All Games must be added to the class.
+    /// </summary>
+    public class MenuMain : Menu
     {   
         //Games
         private Game MonsterHunterRise; //1
@@ -13,7 +18,7 @@
         /// <summary>
         /// This is the first Menu. All Games must be added to the class.
         /// </summary>
-        public MainMenu()
+        public MenuMain()
         {
             //Parent Properties
             menuTitle = "Main Menu";
@@ -35,19 +40,19 @@
             //Add Menus
             foreach(Game game in games)
             {
-                subMenus.Add(game.gameMenu);
+                subMenus.Add(game.GameMenu);
             }  
         }
 
         public override void Display()
         {
             //Display app title
-            Console.WriteLine(String.Format("{0,-30}",
-                String.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
-            Console.WriteLine(String.Format("{0,-32}", 
-                String.Format("{0," + ((32 + 19) / 2).ToString() + "}", "|  GAME GUIDE APP  |")));
-            Console.WriteLine(String.Format("{0,-30}", 
-                String.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
+            Console.WriteLine(string.Format("{0,-30}",
+                string.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
+            Console.WriteLine(string.Format("{0,-32}",
+                string.Format("{0," + ((32 + 19) / 2).ToString() + "}", "|  GAME GUIDE APP  |")));
+            Console.WriteLine(string.Format("{0,-30}",
+                string.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
 
             //Displays menuTitle and prompt and subMenus - menuTitle
             base.Display(); 

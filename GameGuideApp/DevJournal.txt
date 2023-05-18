@@ -1,0 +1,22 @@
+﻿May 16
+
+	Added all of the data for all the weapons in MHR and formated all info. 
+	Added Several Monsters, all A-B. Info needs to be formated still. Gear and Combat tips need to be seperated into a list
+
+	TODO :
+	
+		Finish adding all monsters. Format all data.
+		Feature ideas 
+			1. Add a way to search monster by name
+			2. Add a way to browse monsters by First letter
+
+May 17-18
+
+	Created a formating class to create line spaces in strings to format specifically for console output. 
+	Tested and all json data file from now on will not need to be formatted in the data
+	Removed all special characters from JSON data ex. \n \t
+
+	TODO :
+		
+		Finishing addding all monsters.
+		Use linq queries to search for specific monsters, as well as search alphabetically by first letter of monsters name

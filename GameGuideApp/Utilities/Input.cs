@@ -1,4 +1,6 @@
-﻿namespace GameGuideApp
+﻿using GameGuideApp.MenuSystem;
+
+namespace GameGuideApp
 {
     /// <summary>
     /// Static class that has methods to prompt and recieve and validate user input.
@@ -28,7 +30,7 @@
         /// <summary>
         /// Validate that input is an int, and in range of subMenu Length. Sets inputInt to input if it is a valid integer.
         /// </summary>
-        /// <param name="menu"></param>
+        /// <param Name="menu"></param>
         /// <returns></returns>
         //Set inputInt with valid input
         public static bool ValidateInput(Menu menu)
@@ -49,6 +51,11 @@
         public static int GetInputInt()
         {
             return inputInt;
+        }
+
+        public static string GetInput()
+        {
+            return input;
         }
 
         public static void WriteErrorMessage()

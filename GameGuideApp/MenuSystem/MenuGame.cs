@@ -1,9 +1,9 @@
-﻿namespace GameGuideApp
+﻿namespace GameGuideApp.MenuSystem
 {
     /// <summary>
     /// Anything that inherits from GameMenu overrides Display and adds input value (0) with the prompt "Back".
     /// </summary>
-    public class GameMenu : Menu
+    public class MenuGame : Menu
     {
         public override void Display()
         {

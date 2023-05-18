@@ -1,8 +1,10 @@
-﻿namespace GameGuideApp
+﻿using GameGuideApp.MenuSystem;
+
+namespace GameGuideApp.Games.MonsterHunterRise
 {
-    public class MaterialsMenu : GameMenu
+    public class MenuMaterials : MenuGame
     {
-        public MaterialsMenu()
+        public MenuMaterials()
         {
             //Parent Properties
             menuTitle = "Materials";

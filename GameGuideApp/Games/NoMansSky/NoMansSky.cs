@@ -1,11 +1,13 @@
-﻿namespace GameGuideApp
+﻿using GameGuideApp.MenuSystem;
+
+namespace GameGuideApp.Games
 {
     public class NoMansSky : Game
     {
         public NoMansSky()
         {
-            name = "No Man's Sky";
-            gameMenu.menuTitle = name;
+            Name = "No Man's Sky";
+            GameMenu.menuTitle = Name;
         }
     }
 }
