@@ -1,11 +1,11 @@
 ﻿
 namespace GameGuideApp.Utilities
 {
-
-    //Format string data to console specifications
+    /// <summary>
+    /// Static class with methods to format output to console.
+    /// </summary>
     public static class FormatController
     {
-
         /// <summary>
         /// Takes a string and adds double spaces at a specified character count to format for console output, and returns the new string.
         /// </summary>

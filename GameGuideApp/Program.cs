@@ -17,14 +17,14 @@ namespace GameGuideApp
             {
                 //Display menu and recieve user _input
                 nav.DisplayMenu();
-                nav.input.RecieveInput();
+                nav.Input.RecieveInput();
 
                 //Display error message until user enters valid _input
-                while (!nav.input.ValidateInput(nav.GetCurrentMenu(), out string message))
+                while (!nav.Input.ValidateInput(nav.GetCurrentMenu(), out string message))
                 {
                     Console.WriteLine(message);
                     Console.WriteLine();
-                    nav.input.RecieveInput();
+                    nav.Input.RecieveInput();
                 }
 
                 //Select next menu

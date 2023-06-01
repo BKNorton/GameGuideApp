@@ -10,7 +10,7 @@
 			1. Add a way to search monster by name
 			2. Add a way to browse monsters by First letter
 
-May 17-18
+May 18
 
 	Created a formating class to create line spaces in strings to format specifically for console output. 
 	Tested and all json data file from now on will not need to be formatted in the data
@@ -33,3 +33,5 @@ June 1
 		I do not like Monster and Weapon entities overriding Display. Consider using an interface.
 		Finish populating Monster data.
 		Create a more flexible way to search through monsters (and other long Entity lists). Potentialy using Linq queries.
+		Seperate Solution into multiple projects.
+		Can I remove game dependency from MenuSystem? (Create an abstraction between Games and MenuSystem).

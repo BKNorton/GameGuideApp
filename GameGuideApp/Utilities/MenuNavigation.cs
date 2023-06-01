@@ -7,44 +7,49 @@ namespace GameGuideApp
     /// </summary>
     public class MenuNavigation
     {
-        private Stack<Menu> path;
-        private bool exit;
-        public IInputController input;
-
-        public MenuNavigation()
-        {
-            path = new Stack<Menu>();
-            exit = false;
-            input = new InputController_Console();
-        }
-
-        public MenuNavigation(IInputController input)
-        {
-            path = new Stack<Menu>();
-            exit = false;
-            this.input = input;
-        }
-
-
+        private Stack<Menu> _path;
+        private bool _exit;
+        public IInputController Input;
 
         /// <summary>
-        /// Uses current _input value to select what Menu to push into MenuNavigation Stack, or set exit to true 
+        /// Default constructor instantiates input as InputController_Console
+        /// </summary>
+        public MenuNavigation()
+        {
+            _path = new Stack<Menu>();
+            _exit = false;
+            Input = new InputController_Console();
+        }
+
+        /// <summary>
+        /// Takes a IInputController and injects it into input.
+        /// </summary>
+        /// <param name="input"></param>
+        public MenuNavigation(IInputController input)
+        {
+            _path = new Stack<Menu>();
+            _exit = false;
+            this.Input = input;
+        }
+
+        /// <summary>
+        /// Uses current _input value to select what Menu to push into MenuNavigation Stack, pop path to return to previus Menu, or set exit to true 
         /// </summary>
         public void PickMenu()
         {
             //If the user wants to exit the program
-            if (input.GetInputString() == "0" 
-                && path.Count == 1)
+            if (Input.GetInputString() == "0" 
+                && _path.Count == 1)
             {
-                exit = true;
+                _exit = true;
                 Console.WriteLine("\nExiting Program!");
             }
 
             //If the user wants to go back to the previous menu
-            else if (input.GetInputString() == "0") GoBack();
+            else if (Input.GetInputString() == "0") GoBack();
 
             //Select the menu the user chooses
-            else if (path.Count != 0) AddMenu(path.Peek().subMenus[input.GetInputInt() - 1]);
+            else if (_path.Count != 0) AddMenu(_path.Peek().subMenus[Input.GetInputInt() - 1]);
 
             //There are no menus loaded into path
             else Console.WriteLine("Something went wrong! There are no Menus in path");
@@ -56,17 +61,17 @@ namespace GameGuideApp
         /// <returns></returns>
         public List<Menu> GetSubMenus()
         {
-            return path.Peek().subMenus;
+            return _path.Peek().subMenus;
         }
 
         public Menu GetCurrentMenu()
         {
-            return path.Peek();
+            return _path.Peek();
         }
 
         public void AddMenu(Menu menu)
         {
-            path.Push(menu);
+            _path.Push(menu);
         }
 
         /// <summary>
@@ -74,7 +79,7 @@ namespace GameGuideApp
         /// </summary>
         public void DisplayMenu()
         {
-            path.Peek().Display();
+            _path.Peek().Display();
         }
 
         /// <summary>
@@ -83,7 +88,7 @@ namespace GameGuideApp
         /// <returns></returns>
         public bool ExitProgram()
         {
-            return exit; 
+            return _exit; 
         }
 
         /// <summary>
@@ -91,7 +96,7 @@ namespace GameGuideApp
         /// </summary>
         public void GoBack()
         {
-            path.Pop();
+            _path.Pop();
         }
     }
 }

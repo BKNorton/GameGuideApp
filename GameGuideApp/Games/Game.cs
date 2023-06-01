@@ -1,4 +1,6 @@
-﻿namespace GameGuideApp.MenuSystem
+﻿using GameGuideApp.MenuSystem;
+
+namespace GameGuideApp.Games
 {
     /// <summary>
     /// This class represents a Game with a GameMenu. 
