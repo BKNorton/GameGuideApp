@@ -1,6 +1,6 @@
 ﻿using GameGuideApp.MenuSystem;
 
-namespace GameGuideApp.Games.MonsterHunterRise
+namespace GameGuideApp.Games
 {
     public class MonsterHunterRise : Game
     {

@@ -9,33 +9,45 @@ namespace GameGuideApp
     {
         private Stack<Menu> path;
         private bool exit;
+        public IInputController input;
 
         public MenuNavigation()
         {
             path = new Stack<Menu>();
             exit = false;
+            input = new InputController_Console();
         }
 
+        public MenuNavigation(IInputController input)
+        {
+            path = new Stack<Menu>();
+            exit = false;
+            this.input = input;
+        }
+
+
+
         /// <summary>
-        /// Uses current input value to select what Menu to push into MenuNavigation Stack, or set exit to true 
+        /// Uses current _input value to select what Menu to push into MenuNavigation Stack, or set exit to true 
         /// </summary>
         public void PickMenu()
         {
             //If the user wants to exit the program
-            if (Input.GetInput() == "0" && path.Count == 1)
+            if (input.GetInputString() == "0" 
+                && path.Count == 1)
             {
                 exit = true;
                 Console.WriteLine("\nExiting Program!");
             }
 
             //If the user wants to go back to the previous menu
-            else if (Input.GetInputInt() == 0) GoBack();
+            else if (input.GetInputString() == "0") GoBack();
 
             //Select the menu the user chooses
-            else if (path.Count != 0) AddMenu(path.Peek().subMenus[Input.GetInputInt() - 1]);
+            else if (path.Count != 0) AddMenu(path.Peek().subMenus[input.GetInputInt() - 1]);
 
             //There are no menus loaded into path
-            else Input.ChangeErrorMessage("Something went wrong!");
+            else Console.WriteLine("Something went wrong! There are no Menus in path");
         }
 
         /// <summary>

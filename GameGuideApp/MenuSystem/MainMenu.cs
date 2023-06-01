@@ -1,47 +1,58 @@
 ﻿using GameGuideApp.Games;
-using GameGuideApp.Games.MonsterHunterRise;
 
 namespace GameGuideApp.MenuSystem
 {
     /// <summary>
     /// This is the first Menu. All Games must be added to the class.
     /// </summary>
-    public class MenuMain : Menu
-    {   
+    public class MainMenu : Menu
+    {
         //Games
         private Game MonsterHunterRise; //1
         private Game Halo;              //2
         private Game NoMansSky;         //3
 
-        private List<Game> games;
+        private List<Game> _games;
 
         /// <summary>
-        /// This is the first Menu. All Games must be added to the class.
+        /// Main Menutakes a list of type Game and populates subMenus with each GameMenu.
         /// </summary>
-        public MenuMain()
+        /// <param name="games"></param>
+        public MainMenu()
         {
             //Parent Properties
             menuTitle = "Main Menu";
             prompt = "Select Game";
             
             //Class Properties
-            games = new List<Game>();
+            _games = new List<Game>();
 
             //Initiate Games
             MonsterHunterRise = new MonsterHunterRise();
             Halo = new Halo();
-            NoMansSky = new NoMansSky(); 
+            NoMansSky = new NoMansSky();
 
-            //Add Games
-            games.Add(MonsterHunterRise);
-            games.Add(Halo);
-            games.Add(NoMansSky);
+            ////Add Games
+            _games.Add(MonsterHunterRise);
+            _games.Add(Halo);
+            _games.Add(NoMansSky);
 
             //Add Menus
-            foreach(Game game in games)
+            foreach (Game game in _games)
             {
                 subMenus.Add(game.GameMenu);
             }  
+        }
+
+        public MainMenu(List<Game> games)
+        {
+            _games = games;
+
+            //Add Menus
+            foreach (Game game in _games)
+            {
+                subMenus.Add(game.GameMenu);
+            }
         }
 
         public override void Display()
@@ -54,7 +65,6 @@ namespace GameGuideApp.MenuSystem
             Console.WriteLine(string.Format("{0,-30}",
                 string.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
 
-            //Displays menuTitle and prompt and subMenus - menuTitle
             base.Display(); 
             Console.WriteLine("    0:  Exit\n");
         }

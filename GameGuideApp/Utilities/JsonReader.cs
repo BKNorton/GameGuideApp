@@ -24,7 +24,6 @@ namespace GameGuideApp
         {
             return JsonConvert.DeserializeObject<List<T>>(JsonFileToString(fileName))!;
         }
-
-        
+ 
     }
 }

@@ -1,8 +1,8 @@
 ﻿using GameGuideApp.MenuSystem;
 
-namespace GameGuideApp.Games.MonsterHunterRise
+namespace GameGuideApp.Games
 {
-    public class MenuMaterials : MenuGame
+    public class MenuMaterials : GameMenu
     {
         public MenuMaterials()
         {

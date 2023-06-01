@@ -6,11 +6,11 @@
     public class Game
     {
         public string Name;
-        public MenuGame GameMenu;
+        public GameMenu GameMenu;
 
         public Game()
         {
-            GameMenu = new MenuGame();
+            GameMenu = new GameMenu();
             {
                 GameMenu.prompt = "Select menu";
             }

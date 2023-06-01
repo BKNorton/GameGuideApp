@@ -6,8 +6,8 @@ namespace GameGuideApp
     {
         public static void Main(string[] args)
         {
-            MenuNavigation nav = new MenuNavigation();
-            Menu mainMenu = new MenuMain();
+            MenuNavigation nav = new MenuNavigation(new InputController_Console());
+            Menu mainMenu = new MainMenu();
 
             //Add mainMenu as the first menu in the MenuNavigation path
             nav.AddMenu(mainMenu);
@@ -15,16 +15,16 @@ namespace GameGuideApp
             //Master loop
             do
             {
-                //Display menu and recieve user input
+                //Display menu and recieve user _input
                 nav.DisplayMenu();
-                Input.RecieveInput();
+                nav.input.RecieveInput();
 
-                //Display error message until user enters valid input
-                while (!Input.ValidateInput(nav.GetCurrentMenu()))
+                //Display error message until user enters valid _input
+                while (!nav.input.ValidateInput(nav.GetCurrentMenu(), out string message))
                 {
-                    Input.WriteErrorMessage();
+                    Console.WriteLine(message);
                     Console.WriteLine();
-                    Input.RecieveInput();
+                    nav.input.RecieveInput();
                 }
 
                 //Select next menu

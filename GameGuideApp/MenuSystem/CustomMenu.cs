@@ -1,6 +1,6 @@
 ﻿namespace GameGuideApp.MenuSystem
 {
-    public class MenuLast : Menu
+    public class CustomMenu : Menu
     {
     }
 }
