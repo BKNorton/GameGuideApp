@@ -10,6 +10,7 @@
 			1. Add a way to search monster by name
 			2. Add a way to browse monsters by First letter
 
+
 May 18
 
 	Created a formating class to create line spaces in strings to format specifically for console output. 
@@ -20,6 +21,7 @@ May 18
 		
 		Finishing addding all monsters.
 		Use linq queries to search for specific monsters, as well as search alphabetically by first letter of monsters name
+
 
 June 1
 	
@@ -35,3 +37,32 @@ June 1
 		Create a more flexible way to search through monsters (and other long Entity lists). Potentialy using Linq queries.
 		Seperate Solution into multiple projects.
 		Can I remove game dependency from MenuSystem? (Create an abstraction between Games and MenuSystem).
+
+
+June 18- 22
+	
+	Have been refactoring code to follow SOLID principles. This has mostly been done through using interfaces and setting up the program
+	to work using different forms of input and output. Code is not working completely yet. No Commits have been made since refactoring from 
+	last working program.
+
+	TODO :
+
+		I do not like Monster and Weapon entities overriding Display. Consider using an interface.
+		Finish populating Monster data.
+		Create a more flexible way to search through monsters (and other long Entity lists). Potentialy using Linq queries.
+		 
+		Finish recreating the Menu Navigation. 
+		Implement Custom Menu MenuToString methods. 
+		Refactor MonsterHunterRise. 
+		Seperate the different components of the program into different projects.
+
+
+June 23 
+	
+	Still refactoring the menu system to be more flexible and follow Solid Principles. Program starts and displays main menu the way I want it 
+	to, but menu selection doesn't work. Exit program isn't working either. Problem is most likely in Interact().  No Commits have been made 
+	since refactoring from last working program.
+
+	TODO :
+		
+		Same as last entry.

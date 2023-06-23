@@ -1,20 +1,21 @@
 ﻿using GameGuideApp.MenuSystem;
+using GameGuideApp.MenuSystem.Interfaces;
 
 namespace GameGuideApp.Games
 {
     /// <summary>
     /// This class represents a Game with a GameMenu. 
     /// </summary>
-    public class Game
+    public class Game 
     {
         public string Name;
-        public GameMenu GameMenu;
+        public Menu_SubMenus GameMenu;
 
         public Game()
         {
-            GameMenu = new GameMenu();
+            GameMenu = new Menu_SubMenus();
             {
-                GameMenu.prompt = "Select menu";
+                GameMenu.Prompt = "Select menu";
             }
         }
     }

@@ -7,7 +7,7 @@ namespace GameGuideApp.Games
         public Halo() 
         {
             Name = "Halo";
-            GameMenu.menuTitle = Name;
+            GameMenu.MenuTitle = Name;
         }
     }
 }

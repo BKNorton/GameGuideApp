@@ -1,4 +1,7 @@
 ﻿using GameGuideApp.MenuSystem;
+using GameGuideApp.Games;
+using GameGuideApp.Utilities;
+using GameGuideApp.MenuSystem.Interfaces;
 
 namespace GameGuideApp
 {
@@ -6,32 +9,40 @@ namespace GameGuideApp
     {
         public static void Main(string[] args)
         {
-            MenuNavigation nav = new MenuNavigation(new InputController_Console());
-            Menu mainMenu = new MainMenu();
+            // Create a list of games to pass into the MainMenu contructor.
+            List<Game> games = new List<Game>
+            {
+                // Add Games.
+                new MonsterHunterRise(),
+                new Halo(),
+                new NoMansSky()
+            };
 
-            //Add mainMenu as the first menu in the MenuNavigation path
-            nav.AddMenu(mainMenu);
+            // Create a MainMenu passing _games as an argument.
+            IMainMenu mainMenu = new MainMenu(games);
 
-            //Master loop
+            // Create a MenuNavigation with Console input and output, and pass mainMenu as the first menu.
+            Navigation_Menu nav = new(new InputController_Console(), new UIController_Console(), mainMenu);
+
+            // Master loop.
             do
             {
-                //Display menu and recieve user _input
-                nav.DisplayMenu();
-                nav.Input.RecieveInput();
+                // Display menu, prompt and wait to recieve input from the user.
+                nav.DisplayCurrentMenu();
+                nav.InputController.RecieveInput();
 
-                //Display error message until user enters valid _input
-                while (!nav.Input.ValidateInput(nav.GetCurrentMenu(), out string message))
+                // Prompt user to enter input. Continue prompting for input until input is valid and Interact is performed successfuly.
+                while (!nav.InputController.ValidateInput() || !nav.Interact())
                 {
-                    Console.WriteLine(message);
-                    Console.WriteLine();
-                    nav.Input.RecieveInput();
+                    nav.UIController.DisplayStatus(nav); // should make this a extension method
+                    nav.InputController.RecieveInput();
                 }
 
-                //Select next menu
-                nav.PickMenu();
+                // Display Navigation Menu Status
+                nav.UIController.DisplayStatus(nav);
                 Console.WriteLine("\n\n\n");
             }
-            while (!nav.ExitProgram());
+            while (!nav.Exit);
         }
     }
 }

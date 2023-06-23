@@ -2,16 +2,16 @@
 
 namespace GameGuideApp.Games
 {
-    public class MenuMonsters : GameMenu
+    public class MenuMonsters : Menu_SubMenus
     {
         private List<Monster> _monsters;
         private string _dataFile;
         public MenuMonsters()
         {
             //Parent Properties
-            menuTitle = "Monsters";
-            prompt = "Select a Monster";
-            subMenus = new List<Menu>();
+            MenuTitle = "Monsters";
+            Prompt = "Select a Monster";
+            SubMenus = new List<IMenu>();
 
             //Class Properies
             _dataFile = @"Games\MonsterHunterRise\Data\JSON_monsters.json";
@@ -20,8 +20,8 @@ namespace GameGuideApp.Games
             //Add Menus
             foreach (Monster monster in _monsters)
             {
-                monster.menuTitle = monster.Name;
-                subMenus.Add(monster);
+                monster.MenuTitle = monster.Name;
+                SubMenus.Add(monster);
             }
         }
     }

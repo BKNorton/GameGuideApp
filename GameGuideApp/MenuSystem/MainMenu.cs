@@ -1,72 +1,45 @@
 ﻿using GameGuideApp.Games;
+using GameGuideApp.MenuSystem.Interfaces;
 
 namespace GameGuideApp.MenuSystem
 {
     /// <summary>
     /// This is the first Menu. All Games must be added to the class.
     /// </summary>
-    public class MainMenu : Menu
+    public class MainMenu : Menu_SubMenus, IMainMenu
     {
-        //Games
-        private Game MonsterHunterRise; //1
-        private Game Halo;              //2
-        private Game NoMansSky;         //3
-
-        private List<Game> _games;
+        public List<Game> Games { get; set; }
 
         /// <summary>
-        /// Main Menutakes a list of type Game and populates subMenus with each GameMenu.
+        /// MainMenu takes a list of type Game and populates subMenus with each GameMenu.
         /// </summary>
         /// <param name="games"></param>
-        public MainMenu()
-        {
-            //Parent Properties
-            menuTitle = "Main Menu";
-            prompt = "Select Game";
-            
-            //Class Properties
-            _games = new List<Game>();
-
-            //Initiate Games
-            MonsterHunterRise = new MonsterHunterRise();
-            Halo = new Halo();
-            NoMansSky = new NoMansSky();
-
-            ////Add Games
-            _games.Add(MonsterHunterRise);
-            _games.Add(Halo);
-            _games.Add(NoMansSky);
-
-            //Add Menus
-            foreach (Game game in _games)
-            {
-                subMenus.Add(game.GameMenu);
-            }  
-        }
-
         public MainMenu(List<Game> games)
         {
-            _games = games;
+            // Set MenuTitle and Prompt
+            MenuTitle = "Main Menu";
+            Prompt = "Select a Game";
+            Games = new List<Game>();
+            // If SubMenus is null create an empty list of typr IMenu.
+            // If games is null create an empty list of type Game.
+            // Else add GameMenus to MainMenus SubMenus.
+            if (SubMenus == null) SubMenus = new List<IMenu>();
+            if (games != null) AddGames(games); 
+        }
 
-            //Add Menus
-            foreach (Game game in _games)
+        public void AddGames(List<Game> games) 
+        {
+            foreach (Game game in games)
             {
-                subMenus.Add(game.GameMenu);
+                SubMenus.Add(game.GameMenu);
+                Games.Add(game);
             }
         }
 
-        public override void Display()
+        public void AddGame(Game game)
         {
-            //Display app title
-            Console.WriteLine(string.Format("{0,-30}",
-                string.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
-            Console.WriteLine(string.Format("{0,-32}",
-                string.Format("{0," + ((32 + 19) / 2).ToString() + "}", "|  GAME GUIDE APP  |")));
-            Console.WriteLine(string.Format("{0,-30}",
-                string.Format("{0," + ((30 + 19) / 2).ToString() + "}", " __________________")));
-
-            base.Display(); 
-            Console.WriteLine("    0:  Exit\n");
+            SubMenus.Add(game.GameMenu);
+            Games.Add(game);
         }
     }
 }

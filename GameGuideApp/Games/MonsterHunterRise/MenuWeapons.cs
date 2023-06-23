@@ -2,7 +2,7 @@
 
 namespace GameGuideApp.Games
 {
-    public class MenuWeapons : GameMenu
+    public class MenuWeapons : Menu_SubMenus
     {
         private List<Weapon> _weapons;
         private string _dataFile;
@@ -10,9 +10,9 @@ namespace GameGuideApp.Games
         public MenuWeapons() 
         {
             //Parent Properties
-            menuTitle = "Weapons";
-            prompt = "Select a Weapon";
-            subMenus = new List<Menu>();
+            MenuTitle = "Weapons";
+            Prompt = "Select a Weapon";
+            SubMenus = new List<IMenu>();
 
             //Class Properies
             _dataFile = @"Games\MonsterHunterRise\Data\JSON_weapons.json";
@@ -21,8 +21,8 @@ namespace GameGuideApp.Games
             //Add Menus
             foreach (Weapon weapon in _weapons)
             {
-                weapon.menuTitle = weapon.Name;
-                subMenus.Add(weapon);
+                weapon.MenuTitle = weapon.Name;
+                SubMenus.Add(weapon);
             }
         }
     }

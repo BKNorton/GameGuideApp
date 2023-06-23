@@ -1,25 +1,25 @@
 ﻿using GameGuideApp.MenuSystem;
+using GameGuideApp.MenuSystem.Interfaces;
 using GameGuideApp.Utilities;
 
 namespace GameGuideApp.Games
 {
-    public class Weapon : CustomMenu
+    public class Weapon : Menu_Custom
     {
         public string Name { get; set; }
         public string Description { get; set; }
         public List<string> Button_Basic { get; set; }
         public List<string> Attack_Basic { get; set; }
 
-        public override void Display()
+        public override string MenuToString()
         {
-            //Name & Description
-            FormatController.WriteMenuHeader(Name);
-            FormatController.WriteWithBorder1(Description);
+            return
+                //Name & Description
+                FormatController_Console.FormatMenuHeader(this) +
+                FormatController_Console.FormatWithBorder1(Description) +
 
-            //Basic Attacks
-            FormatController.DisplayTwoColTable(Attack_Basic, Button_Basic, "Basic Attacks");
-
-            Console.WriteLine("\n  - 0 : Back\n");
+                //Basic Attacks
+                FormatController_Console.FormatTwoColTable(Attack_Basic, Button_Basic, "Basic Attacks");
         }
     }
 }

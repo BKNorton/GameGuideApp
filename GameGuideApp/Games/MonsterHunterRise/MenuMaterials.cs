@@ -2,18 +2,13 @@
 
 namespace GameGuideApp.Games
 {
-    public class MenuMaterials : GameMenu
+    public class MenuMaterials : Menu_SubMenus
     {
         public MenuMaterials()
         {
             //Parent Properties
-            menuTitle = "Materials";
-            prompt = "Select a Material";
-            subMenus = new List<Menu>();
-
-            //Class Properies
-
-            //Add Menus
+            MenuTitle = "Materials";
+            Prompt = "Select a Material";
         }
     }
 }

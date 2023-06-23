@@ -7,7 +7,7 @@ namespace GameGuideApp.Games
         public NoMansSky()
         {
             Name = "No Man's Sky";
-            GameMenu.menuTitle = Name;
+            GameMenu.MenuTitle = Name;
         }
     }
 }

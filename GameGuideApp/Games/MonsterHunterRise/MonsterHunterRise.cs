@@ -13,7 +13,7 @@ namespace GameGuideApp.Games
         {
             //Parent Properties
             Name = "Monster Hunter Rise";
-            GameMenu.menuTitle = Name;
+            GameMenu.MenuTitle = Name;
 
             //Class Properties
             _weaponsMenu = new MenuWeapons();
@@ -21,9 +21,9 @@ namespace GameGuideApp.Games
             _materialsMenu = new MenuMaterials();
 
             //Add Menus
-            GameMenu.subMenus.Add(_weaponsMenu);
-            GameMenu.subMenus.Add(_monstersMenu);
-            GameMenu.subMenus.Add(_materialsMenu);
+            GameMenu.SubMenus.Add(_weaponsMenu);
+            GameMenu.SubMenus.Add(_monstersMenu);
+            GameMenu.SubMenus.Add(_materialsMenu);
         } 
     }
 }
