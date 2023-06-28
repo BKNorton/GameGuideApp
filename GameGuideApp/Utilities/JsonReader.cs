@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿
+using GameGuideApp.MenuSystem.Interfaces;
+using Newtonsoft.Json;
 
 namespace GameGuideApp
 {
@@ -24,6 +26,11 @@ namespace GameGuideApp
         {
             return JsonConvert.DeserializeObject<List<T>>(JsonFileToString(fileName))!;
         }
- 
+
+        public static string ObjectToJsonString(IModel model)
+        {
+            return JsonConvert.SerializeObject(model);
+        }
+
     }
 }

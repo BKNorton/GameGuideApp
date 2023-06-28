@@ -1,7 +1,11 @@
 ﻿using GameGuideApp.MenuSystem;
-using GameGuideApp.Games;
 using GameGuideApp.Utilities;
-using GameGuideApp.MenuSystem.Interfaces;
+using GameGuideApp.Games.MonsterHunterRise;
+using GameGuideApp.Games.Halo;
+using GameGuideApp.Games.NoMansSky;
+using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+using GameGuideApp.MenuSystem.MenuTemplates;
+using GameGuideApp.Utilities.ConsoleController;
 
 namespace GameGuideApp
 {
@@ -13,9 +17,9 @@ namespace GameGuideApp
             List<Game> games = new List<Game>
             {
                 // Add Games.
-                new MonsterHunterRise(),
-                new Halo(),
-                new NoMansSky()
+                new GameMonsterHunterRise(),
+                new GameHalo(),
+                new GameNoMansSky()
             };
 
             // Create a MainMenu passing _games as an argument.

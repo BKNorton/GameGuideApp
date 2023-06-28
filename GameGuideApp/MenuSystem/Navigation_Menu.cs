@@ -1,6 +1,5 @@
-﻿using GameGuideApp.MenuSystem.Interfaces;
-using GameGuideApp.Utilities.Interfaces;
-using System.Runtime.CompilerServices;
+﻿using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+using GameGuideApp.Utilities.ConsoleController.Interfaces;
 
 namespace GameGuideApp.MenuSystem
 {
@@ -58,14 +57,22 @@ namespace GameGuideApp.MenuSystem
             // Extract current menu to use.
             // If current menu is null, exit the method.
             var currentMenu = Path.Peek();
-            if (currentMenu == null) return false;
+            if (currentMenu == null)
+            {
+                Status = "Menu is null";
+                return false;
+            }
 
             // If currentMenu implements IInteractable, then cast as a new obj of type IInteractable to have access to IIteractable methods.
             // Call Interact on new obj.
             if (currentMenu is IInteractable)
             {
                 IInteractable interactable = (IInteractable)currentMenu;
-                if (!interactable.Interact(InputController, this)) return false;
+                if (!interactable.Interact(this))
+                {
+                    Status = InputController.InputStatus;
+                    return false;
+                }
             }
             return true;
         }
@@ -76,17 +83,17 @@ namespace GameGuideApp.MenuSystem
         /// This assumes that input has been recieved and validated; it is an int, it is greater than 0 and path Count is greater than zero.
         /// </summary>
         /// <param name="menu"></param>
-        public bool SelectSubMenu(IInputController inputController, IMenu_SubMenus menu)
+        public bool SelectSubMenu(IMenu_SubMenus menu)
         {   
-            if (inputController.InputInt <= menu.SubMenus.Count)
+            if (InputController.InputInt <= menu.SubMenus.Count)
             {
-                AddMenu(menu.SubMenus.ElementAt(inputController.InputInt - 1));
-                Status = "Menu has been selected";
+                AddMenu(menu.SubMenus.ElementAt(InputController.InputInt - 1));
+                Status = InputController.InputStatus;
                 return true;
             }
             else
             {
-                Status = "Invalid Input!";
+                Status = InputController.InputStatus;
                 return false;
             }
         }
@@ -98,14 +105,14 @@ namespace GameGuideApp.MenuSystem
                 Status = "Error: Add Menu was unsuccessful";
                 return;
             }
-            if (menu is IMenu_SubMenus)
-            {
-                Path.Push((IMenu_SubMenus)menu);
-            }
-            else if (menu is IMenu_Custom)
-            {
-                Path.Push((IMenu_Custom)menu);
-            }
+            //if (menu is IMenu_SubMenus)
+            //{
+            //    Path.Push((IMenu_SubMenus)menu);
+            //}
+            //else if (menu is IMenu_Model)
+            //{
+            //    Path.Push((IMenu_Model)menu);
+            //}
             else
             {
                 Path.Push(menu);
@@ -130,10 +137,9 @@ namespace GameGuideApp.MenuSystem
             {
                 Status = "Returning Menu";
                 var menu = Path.Peek();
-                
-                if (menu == null) return null;
-                if (menu is IMenu_SubMenus) return (IMenu_SubMenus)menu;
-                if (menu is IMenu_Custom) return (IMenu_Custom)menu;
+                return menu;
+                //if (menu is IMenu_SubMenus) return (IMenu_SubMenus)menu;
+                //if (menu is IMenu_Model) return (IMenu_Model)menu;
                 //if (menu is IMainMenu) return (IMainMenu)menu;
             }
 
@@ -145,19 +151,15 @@ namespace GameGuideApp.MenuSystem
         {
             var current = GetCurrentMenu();
             if (current == null) return;
-            if (current is IMenu_SubMenus)
-                UIController.DisplayMenu((IMenu_SubMenus)current);
-            else if (current is IMenu_Custom)
-                UIController.DisplayMenu((IMenu_Custom)current);
-            else
-                UIController.DisplayMenu(current);
-        }
+            current.Display(UIController);
 
-        public void DisplayMenu(IMenu menu)
-        {
-            UIController.DisplayMenu(menu);
+            //if (current is IMenu_SubMenus)
+            //    UIController.DisplayMenu((IMenu_SubMenus)current);
+            //else if (current is IMenu_Custom)
+            //    UIController.DisplayMenu((IMenu_Custom)current);
+            //else
+            //    UIController.DisplayMenu(current);
         }
-
         public void ReturnToMainMenu()
         {
             foreach (IMenu menu in Path)
@@ -166,5 +168,11 @@ namespace GameGuideApp.MenuSystem
                 RemoveMenu();
             }
         }
+
+        public void DisplayMenu(IMenu menu)
+        {
+            UIController.DisplayMenu(menu);
+        }
+
     }
 }

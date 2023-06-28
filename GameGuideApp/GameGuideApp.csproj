@@ -8,6 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AppViewModels\**" />
+    <EmbeddedResource Remove="AppViewModels\**" />
+    <None Remove="AppViewModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Utilities\Display.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
@@ -18,10 +28,6 @@
     <None Update="Games\MonsterHunterRise\Data\JSON_weapons.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="AppViewModels\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿May 16
+﻿May 16 2023
 
 	Added all of the data for all the weapons in MHR and formated all info. 
 	Added Several Monsters, all A-B. Info needs to be formated still. Gear and Combat tips need to be seperated into a list
@@ -11,7 +11,7 @@
 			2. Add a way to browse monsters by First letter
 
 
-May 18
+May 18 2023
 
 	Created a formating class to create line spaces in strings to format specifically for console output. 
 	Tested and all json data file from now on will not need to be formatted in the data
@@ -23,7 +23,7 @@ May 18
 		Use linq queries to search for specific monsters, as well as search alphabetically by first letter of monsters name
 
 
-June 1
+June 1 2023
 	
 	MenuNavigation now uses constructor injection to take in a type that implements IInputController.
 	This creates a loose coupling between MenuNavigation and its inputController. If the app needs input that doesn't come from the console,
@@ -39,7 +39,7 @@ June 1
 		Can I remove game dependency from MenuSystem? (Create an abstraction between Games and MenuSystem).
 
 
-June 18- 22
+June 18- 22 2023
 	
 	Have been refactoring code to follow SOLID principles. This has mostly been done through using interfaces and setting up the program
 	to work using different forms of input and output. Code is not working completely yet. No Commits have been made since refactoring from 
@@ -57,7 +57,7 @@ June 18- 22
 		Seperate the different components of the program into different projects.
 
 
-June 23 
+June 23 2023
 	
 	Still refactoring the menu system to be more flexible and follow Solid Principles. Program starts and displays main menu the way I want it 
 	to, but menu selection doesn't work. Exit program isn't working either. Problem is most likely in Interact().  No Commits have been made 
@@ -66,3 +66,11 @@ June 23
 	TODO :
 		
 		Same as last entry.
+
+June 27 2023
+
+	TODO :
+		
+		Make it so that the menus do not populate until they are displayed to cut down on load time at the start of the program. The possibility 
+		of having a large number of games and game menus that need to be populated is unknown. This will be more scalable.
+
