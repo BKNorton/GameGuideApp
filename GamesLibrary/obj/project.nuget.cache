@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DgK05OkDEWHMIC6wh+cVOYoLWGC9DFruPkQtq46Ylh1kZFpTYs1GWYFsqyrDVH/cvscyNazTc00cN3pkq0prog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GamesLibrary\\GameLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kirk\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

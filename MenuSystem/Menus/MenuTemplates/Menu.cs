@@ -1,0 +1,21 @@
+﻿using GameGuideApp.MenuSystem.Interfaces;
+using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+
+
+namespace GameGuideApp.MenuSystem.MenuTemplates
+{
+    /// <summary>
+    /// Base class for all Menu objects.
+    /// Implements IMenu.
+    /// </summary>
+    public abstract class Menu : IMenu
+    {
+        public string MenuTitle { get; set; } = string.Empty;
+        public string Prompt { get; set; } = string.Empty;
+
+        public virtual void Display(IUIController controller)
+        {
+            controller.DisplayMenu(this);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\GamesLibrary.csproj.AssemblyReference.cache
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\GamesLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\GamesLibrary.AssemblyInfoInputs.cache
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\GamesLibrary.AssemblyInfo.cs
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\GamesLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\bin\Debug\net7.0\MonsterHunterRise\Data\JSON_monsters.json
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\bin\Debug\net7.0\MonsterHunterRise\Data\JSON_weapons.json
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\bin\Debug\net7.0\GamesLibrary.deps.json
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\bin\Debug\net7.0\GamesLibrary.dll
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\bin\Debug\net7.0\GamesLibrary.pdb
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\bin\Debug\net7.0\MenuSystem.dll
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\bin\Debug\net7.0\MenuSystem.pdb
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\GamesLibrary.csproj.CopyComplete
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\GamesLibrary.dll
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\refint\GamesLibrary.dll
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\GamesLibrary.pdb
+C:\Users\Kirk\Documents\GameGuideApp\GamesLibrary\obj\Debug\net7.0\ref\GamesLibrary.dll

@@ -1,0 +1,252 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideAppConsole\\GameGuideAppConsole.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kirk\\Documents\\GameGuideApp\\ConsoleController1\\ConsoleController.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\ConsoleController1\\ConsoleController.csproj",
+        "projectName": "ConsoleController",
+        "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\ConsoleController1\\ConsoleController.csproj",
+        "packagesPath": "C:\\Users\\Kirk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\ConsoleController1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kirk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj": {
+                "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideAppConsole\\GameGuideAppConsole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideAppConsole\\GameGuideAppConsole.csproj",
+        "projectName": "GameGuideAppConsole",
+        "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideAppConsole\\GameGuideAppConsole.csproj",
+        "packagesPath": "C:\\Users\\Kirk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideAppConsole\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kirk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Kirk\\Documents\\GameGuideApp\\ConsoleController1\\ConsoleController.csproj": {
+                "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\ConsoleController1\\ConsoleController.csproj"
+              },
+              "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GamesLibrary\\GameLibrary.csproj": {
+                "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GamesLibrary\\GameLibrary.csproj"
+              },
+              "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj": {
+                "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GamesLibrary\\GameLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GamesLibrary\\GameLibrary.csproj",
+        "projectName": "GameLibrary",
+        "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GamesLibrary\\GameLibrary.csproj",
+        "packagesPath": "C:\\Users\\Kirk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GamesLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kirk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj": {
+                "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj",
+        "projectName": "MenuSystem",
+        "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\MenuSystem.csproj",
+        "packagesPath": "C:\\Users\\Kirk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\MenuSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kirk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

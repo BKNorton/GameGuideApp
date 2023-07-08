@@ -1,0 +1,5 @@
+C:\Users\Kirk\Documents\GameGuideApp\ConsoleController\obj\Debug\net7.0\ConsoleController.csproj.AssemblyReference.cache
+C:\Users\Kirk\Documents\GameGuideApp\ConsoleController\obj\Debug\net7.0\ConsoleController.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kirk\Documents\GameGuideApp\ConsoleController\obj\Debug\net7.0\ConsoleController.AssemblyInfoInputs.cache
+C:\Users\Kirk\Documents\GameGuideApp\ConsoleController\obj\Debug\net7.0\ConsoleController.AssemblyInfo.cs
+C:\Users\Kirk\Documents\GameGuideApp\ConsoleController\obj\Debug\net7.0\ConsoleController.csproj.CoreCompileInputs.cache

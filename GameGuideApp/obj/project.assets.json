@@ -60,9 +60,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideApp\\GameGuideApp.csproj",
-      "projectName": "GameGuideApp",
-      "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideApp\\GameGuideApp.csproj",
+      "projectUniqueName": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideApp\\MenuSystem.csproj",
+      "projectName": "MenuSystem",
+      "projectPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideApp\\MenuSystem.csproj",
       "packagesPath": "C:\\Users\\Kirk\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Kirk\\Documents\\GameGuideApp\\GameGuideApp\\obj\\",
       "projectStyle": "PackageReference",
@@ -114,7 +114,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }
