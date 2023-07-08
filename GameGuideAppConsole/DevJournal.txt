@@ -78,3 +78,15 @@ June 27 2023
 		Make it so that the menus do not populate until they are displayed to cut down on load time at the start of the program. The possibility 
 		of having a large number of games and game menus that need to be populated is unknown. This will be more scalable.
 
+July 8 2023
+
+	I tried a couple times to move my files into seperate projects but I could not reference the projects I needed because of a circular dependency. So I 
+	rearranged some classes in a way that make more senese, removes that circular dependency, and the successfuly seperated my files into seperate projects.
+
+	TODO :
+		
+		Finish populating Monster data.
+		Create a more flexible way to search through monsters (and other long Entity lists). Potentialy using Linq queries.
+
+		Create the menu for Materials.
+		Find a way to not hard code in the file path for json data.
