@@ -62,7 +62,7 @@ namespace ConsoleController
 
             return newString;
         }
-
+                
         public static string StyleBorder(string markerL, string markerR)
         {
             return $"\n{markerL}\t\t\t\t\t\t\t\t\t\t\t\t{markerR}\n";
@@ -202,15 +202,15 @@ namespace ConsoleController
         {
             var output = FormatAttributeTitle(table);
             output += StyleBorder("--", "--")
-                + string.Format(string.Format("\n{0,-100}",
-                      string.Format("\n{0," + ((100 + 71) / 2).ToString() + "}\n",
-                    "-----------------------------------------------------------------------")));
+                + string.Format(string.Format("\n{0,-96}",
+                      string.Format("\n{0," + ((96 + 76) / 2).ToString() + "}\n",
+                    "----------------------------------------------------------------------------")));
             for (int i = 0; i < table.Table.Count; i++)
             {
-                output += string.Format("\n\t\t  {0, 30}  |  {1, -30}", table.Table[i][0], table.Table[i][1])
-                    + string.Format(string.Format("\n{0,-100}",
-                      string.Format("{0," + ((100 + 71) / 2).ToString() + "}\n",
-                    "-----------------------------------------------------------------------")));
+                output += string.Format("\n\t  {0, 35}  |  {1, -25}", table.Table[i][0], table.Table[i][1])
+                    + string.Format(string.Format("\n{0,-96}",
+                      string.Format("{0," + ((96 + 76) / 2).ToString() + "}\n",
+                    "----------------------------------------------------------------------------")));
             }
             output += StyleBorder("--", "--");
             return output;
