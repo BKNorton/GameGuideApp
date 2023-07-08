@@ -1,5 +1,6 @@
 ﻿using GameGuideApp.MenuSystem.Interfaces;
 using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+using MenuSystem;
 
 namespace GameGuideApp.MenuSystem.MenuTemplates
 {

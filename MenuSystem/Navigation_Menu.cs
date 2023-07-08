@@ -1,7 +1,7 @@
 ﻿using GameGuideApp.MenuSystem.Interfaces;
 using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
 
-namespace GameGuideApp.MenuSystem
+namespace MenuSystem
 {
     public class Navigation_Menu
     {
@@ -10,7 +10,7 @@ namespace GameGuideApp.MenuSystem
         public IUIController UIController;
 
         public string Status;
-        public bool Exit {  get => (Path.Count == 0); }
+        public bool Exit { get => Path.Count == 0; }
 
         private IMenu CurrentMenu { get => Path.Peek(); }
 
@@ -85,7 +85,7 @@ namespace GameGuideApp.MenuSystem
         /// </summary>
         /// <param name="menu"></param>
         public bool SelectSubMenu(IMenu_SubMenus menu)
-        {   
+        {
             if (InputController.InputInt <= menu.SubMenus.Count)
             {
                 AddMenu(menu.SubMenus[InputController.InputInt - 1]);
@@ -120,7 +120,7 @@ namespace GameGuideApp.MenuSystem
                 Status = "Error: Attempt to Remove Menu was unsuccessful";
                 return;
             }
-                Path.Pop();
+            Path.Pop();
         }
 
         public IMenu? GetCurrentMenu()
@@ -166,11 +166,15 @@ namespace GameGuideApp.MenuSystem
 
         public bool ValidateInput()
         {
-            if (!InputController.ValidateInput()) return false;
+            if (!InputController.ValidateInput())
+            {
+                Status = InputController.InputStatus;
+                return false;
+            }
             if (CurrentMenu is IMenu_SubMenus)
             {
-               if (ValidateInputSub((IMenu_SubMenus)CurrentMenu)) return true;
-               else return false;
+                if (ValidateInputSub((IMenu_SubMenus)CurrentMenu)) return true;
+                else return false;
             }
             else if (CurrentMenu is IMenu_Model)
             {
@@ -184,12 +188,12 @@ namespace GameGuideApp.MenuSystem
         {
             if (InputController.InputInt <= menu.SubMenus.Count)
             {
-                Status = "Valid Input";
+                Status = InputController.InputStatus = "Valid Input";
                 return true;
             }
             else
             {
-                Status = "Invalid Input";
+                Status = InputController.InputStatus = "Invalid Input";
                 return false;
             }
         }

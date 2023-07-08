@@ -1,4 +1,6 @@
 ﻿
+using MenuSystem;
+
 namespace GameGuideApp.MenuSystem.MenuTemplates.Interfaces
 {
     public interface IInteractable

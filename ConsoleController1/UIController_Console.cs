@@ -1,7 +1,7 @@
-﻿using GameGuideApp.MenuSystem;
-using GameGuideApp.MenuSystem.Interfaces;
+﻿using GameGuideApp.MenuSystem.Interfaces;
 using GameGuideApp.MenuSystem.Attributes.Interfaces;
 using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+using MenuSystem;
 
 namespace ConsoleController
 {

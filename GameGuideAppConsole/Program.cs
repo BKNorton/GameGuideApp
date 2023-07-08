@@ -3,6 +3,7 @@ using GameGuideApp.GamesLibrary;
 using GameGuideApp.MenuSystem;
 using GameGuideApp.MenuSystem.MenuTemplates;
 using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+using MenuSystem;
 
 namespace GameGuideApp
 {
