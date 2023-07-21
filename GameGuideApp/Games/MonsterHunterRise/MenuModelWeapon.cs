@@ -1,8 +1,10 @@
-﻿using GameGuideApp.MenuSystem.Attributes;
+﻿using GameGuideApp.Games.MonsterHunterRise.Models;
 using GameGuideApp.MenuSystem.Attributes.Interfaces;
+using GameGuideApp.MenuSystem.Attributes;
+using GameGuideApp.MenuSystem.Interfaces;
 using GameGuideApp.MenuSystem.MenuTemplates;
 
-namespace GameGuideApp.GamesLibrary
+namespace GameGuideApp.Games.MonsterHunterRise
 {
     public class MenuModelWeapon : Menu_Model
     {

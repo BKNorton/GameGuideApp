@@ -1,5 +1,6 @@
-﻿using GameGuideApp.MenuSystem.Interfaces;
-using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+﻿
+using MenuSystem.Interfaces;
+using MenuSystem.Menus.MenuTemplates.Interfaces;
 
 namespace MenuSystem
 {
@@ -26,10 +27,9 @@ namespace MenuSystem
         public Navigation_Menu(IInputController inputController, IUIController uiController, IMainMenu menu)
         {
             Path = new Stack<IMenu>();
-            Path.Push(menu);
+            Path.Push((IMenu)menu);
             InputController = inputController;
             UIController = uiController;
-
             Status = "Menu Navigation initialized";
         }
 
@@ -52,7 +52,8 @@ namespace MenuSystem
             if (InputController.InputString == "0")
             {
                 RemoveMenu();
-                Status = "Previous Menu";
+                Status = "Previous Menu. . .";
+                if (Path.Count == 0) Status = "Exiting Program. . ."; 
                 return true;
             }
 
@@ -89,7 +90,7 @@ namespace MenuSystem
             if (InputController.InputInt <= menu.SubMenus.Count)
             {
                 AddMenu(menu.SubMenus[InputController.InputInt - 1]);
-                Status = InputController.InputStatus;
+                Status = "Menu selected. . .";
                 return true;
             }
             else
@@ -133,7 +134,7 @@ namespace MenuSystem
                 return menu;
             }
 
-            Status = "Error: Get Current Menu was unsuccessful";
+            Status = "Error: Get Current Menu was unsuccessful!";
             return null;
         }
 
@@ -179,21 +180,29 @@ namespace MenuSystem
             else if (CurrentMenu is IMenu_Model)
             {
                 if (InputController.InputString == "0") return true;
-                else return false;
+                else
+                {
+                    Status = InputController.InputStatus = "Invalid Input!";
+                    return false;
+                }
             }
-            else return false;
+            else
+            {
+                Status = InputController.InputStatus = "Invalid Input!";
+                return false;
+            }
         }
 
         public bool ValidateInputSub(IMenu_SubMenus menu)
         {
             if (InputController.InputInt <= menu.SubMenus.Count)
             {
-                Status = InputController.InputStatus = "Valid Input";
+                Status = InputController.InputStatus = "Valid Input. . .";
                 return true;
             }
             else
             {
-                Status = InputController.InputStatus = "Invalid Input";
+                Status = InputController.InputStatus = "Invalid Input!";
                 return false;
             }
         }

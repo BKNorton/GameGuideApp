@@ -1,4 +1,5 @@
-﻿using GameGuideApp.MenuSystem.Interfaces;
+﻿
+using MenuSystem.Menus;
 using Newtonsoft.Json;
 
 namespace GameGuideApp.MenuSystem.Utilities
@@ -21,7 +22,7 @@ namespace GameGuideApp.MenuSystem.Utilities
         /// <typeparam name="T"></typeparam>
         /// <param name="fileName"></param>
         /// <returns></returns>
-        public static List<T> JsonFileToObjects<T>(string fileName)
+        public static List<T> JsonFileToObjects<T>(string fileName) where T : IModel
         {
             return JsonConvert.DeserializeObject<List<T>>(JsonFileToString(fileName))!;
         }

@@ -1,4 +1,4 @@
-﻿namespace GameGuideApp.MenuSystem.MenuTemplates.Interfaces
+﻿namespace MenuSystem.Menus.MenuTemplates.Interfaces
 {
     public interface IMenu_SubMenus : IMenu, IInteractable
     {

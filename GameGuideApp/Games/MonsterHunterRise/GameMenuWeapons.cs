@@ -1,21 +1,23 @@
-﻿using GameGuideApp.MenuSystem.MenuTemplates;
-using GameGuideApp.MenuSystem.Utilities;
+﻿using GameGuideApp.Games.MonsterHunterRise;
+using GameGuideApp.Games.MonsterHunterRise.Models;
+using GameGuideApp.MenuSystem.Interfaces;
+using GameGuideApp.MenuSystem.MenuTemplates;
 
-namespace GameGuideApp.GamesLibrary
+namespace GameGuideApp.Games
 {
     public class GameMenuWeapons : Menu_SubMenus
     {
         private List<Weapon> _weapons;
         private string _dataFile;
-
-        public GameMenuWeapons()
+   
+        public GameMenuWeapons() 
         {
             //Parent Properties
             MenuTitle = "Weapons";
             Prompt = "Select a Weapon";
 
             //Class Properies
-            _dataFile = @"MonsterHunterRise\Data\JSON_weapons.json";
+            _dataFile = @"Games\MonsterHunterRise\Data\JSON_weapons.json";
             _weapons = JsonReader.JsonFileToObjects<Weapon>(_dataFile);
 
             //Add Menus
@@ -24,5 +26,12 @@ namespace GameGuideApp.GamesLibrary
                 SubMenus.Add(new MenuModelWeapon(weapon));
             }
         }
+
+        //string[] row = new string[2];
+        //row[0] = model.Combo_Button[i];
+        //row[1] = model.Combo_Attack[i];
+        //Combos.Table.Add(row);
     }
+
+
 }

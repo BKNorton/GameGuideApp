@@ -1,6 +1,7 @@
-﻿using GameGuideApp.MenuSystem.Interfaces;
+﻿
+using MenuSystem.Interfaces;
 
-namespace GameGuideApp.MenuSystem.MenuTemplates.Interfaces
+namespace MenuSystem.Menus.MenuTemplates.Interfaces
 {
     public interface IDisplayable
     {

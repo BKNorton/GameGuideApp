@@ -1,5 +1,5 @@
 ﻿
-namespace GameGuideApp.MenuSystem.Interfaces
+namespace MenuSystem.Menus
 {
     public interface IModel
     {

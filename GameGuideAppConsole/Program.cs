@@ -1,11 +1,11 @@
 ﻿using ConsoleController;
-using GameGuideApp.GamesLibrary;
-using GameGuideApp.MenuSystem;
-using GameGuideApp.MenuSystem.MenuTemplates;
-using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+using GamesLibrary;
 using MenuSystem;
+using MenuSystem.Menus.MenuTemplates.Interfaces;
+using MenuSystem.Menus.MenuTemplates;
+using MenuSystem.Menus;
 
-namespace GameGuideApp
+namespace GameGuideAppConsole
 {
     public class Program
     {

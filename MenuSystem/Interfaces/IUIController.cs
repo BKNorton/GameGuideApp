@@ -1,7 +1,6 @@
-﻿using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
-using MenuSystem;
+﻿using MenuSystem.Menus.MenuTemplates.Interfaces;
 
-namespace GameGuideApp.MenuSystem.Interfaces
+namespace MenuSystem.Interfaces
 {
     public interface IUIController
     {

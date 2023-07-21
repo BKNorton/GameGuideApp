@@ -1,6 +1,6 @@
-﻿using GameGuideApp.MenuSystem.Attributes.Interfaces;
+﻿using MenuSystem.Attributes.Interfaces;
 
-namespace GameGuideApp.MenuSystem.Attributes
+namespace MenuSystem.Attributes
 {
     public class Attributes_Paragraph : Attributes, IAttributes_Paragraph
     {

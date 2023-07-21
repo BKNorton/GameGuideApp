@@ -1,8 +1,8 @@
-﻿using GameGuideApp.MenuSystem.Interfaces;
-using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+﻿
+using MenuSystem.Interfaces;
+using MenuSystem.Menus.MenuTemplates.Interfaces;
 
-
-namespace GameGuideApp.MenuSystem.MenuTemplates
+namespace MenuSystem.Menus.MenuTemplates
 {
     /// <summary>
     /// Base class for all Menu objects.

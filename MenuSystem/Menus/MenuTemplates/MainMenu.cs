@@ -1,11 +1,11 @@
-﻿using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+﻿using MenuSystem.Menus.MenuTemplates.Interfaces;
 
-namespace GameGuideApp.MenuSystem.MenuTemplates
+namespace MenuSystem.Menus.MenuTemplates
 {
     /// <summary>
-    /// This is the first Menu. All Games must be added to the class.
+    /// This is the first Menu. All Games must be added to the class. This class is concrete and cannot be inherited from.
     /// </summary>
-    public class MainMenu : Menu_SubMenus, IMainMenu
+    public sealed class MainMenu : Menu_SubMenus, IMainMenu
     {
         public List<Game> Games { get; set; }
 
@@ -19,6 +19,7 @@ namespace GameGuideApp.MenuSystem.MenuTemplates
             MenuTitle = "Main Menu";
             Prompt = "Select a Game";
             Games = new List<Game>();
+
             // If SubMenus is null create an empty list of typr IMenu.
             // If games is null create an empty list of type Game.
             // Else add GameMenus to MainMenus SubMenus.
@@ -30,8 +31,7 @@ namespace GameGuideApp.MenuSystem.MenuTemplates
         {
             foreach (Game game in games)
             {
-                SubMenus.Add(game.GameMenu);
-                Games.Add(game);
+                AddGame(game);
             }
         }
 

@@ -1,6 +1,7 @@
-﻿using GameGuideApp.MenuSystem.Interfaces;
+﻿
+using MenuSystem.Menus;
 
-namespace GameGuideApp.GamesLibrary
+namespace GamesLibrary.Models
 {
     public class Monster : IModel
     {

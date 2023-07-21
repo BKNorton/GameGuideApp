@@ -1,21 +1,20 @@
-﻿using GameGuideApp.MenuSystem.MenuTemplates;
+﻿
+using MenuSystem.Menus.MenuTemplates;
+using MenuSystem.Menus.MenuTemplates.Interfaces;
 
-namespace GameGuideApp.MenuSystem
+namespace MenuSystem.Menus
 {
     /// <summary>
     /// This class represents a Game with a GameMenu. 
     /// </summary>
-    public class Game
+    public abstract class Game
     {
         public string Name { get; set; } = string.Empty;
-        public Menu_SubMenus GameMenu;
+        public GameMenu GameMenu { get; set; } = new GameMenu();
 
-        public Game()
+        public Game() 
         {
-            GameMenu = new Menu_SubMenus();
-            {
-                GameMenu.Prompt = "Select menu";
-            }
+            //GameMenu.Prompt = "Select Menu";
         }
     }
 }

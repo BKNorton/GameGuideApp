@@ -1,7 +1,8 @@
-﻿using GameGuideApp.MenuSystem.Interfaces;
-using GameGuideApp.MenuSystem.Attributes.Interfaces;
-using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+﻿
 using MenuSystem;
+using MenuSystem.Interfaces;
+using MenuSystem.Menus.MenuTemplates.Interfaces;
+using MenuSystem.Attributes.Interfaces;
 
 namespace ConsoleController
 {
@@ -45,7 +46,9 @@ namespace ConsoleController
         /// <param name="input"></param>
         public void DisplayStatus(Navigation_Menu nav)
         {
-            Console.WriteLine($"\n{nav.Status}\n");
+            Console.WriteLine($"\n. . . . . . . . . .\n" +
+                $"  {nav.Status}" +
+                $"\n. . . . . . . . . .\n");
         }
 
         public void DisplayAttributes(List<IAttributes> attributes)

@@ -1,4 +1,5 @@
-﻿using GameGuideApp.MenuSystem.Interfaces;
+﻿
+using MenuSystem.Interfaces;
 
 namespace ConsoleController
 {
@@ -29,9 +30,9 @@ namespace ConsoleController
             if (input != null)
             {
                 InputString = input;
-                InputStatus = "Input recieved";
+                InputStatus = "Input recieved. . .";
             }
-            else InputStatus = "Error: Input not recieved";
+            else InputStatus = "Error: Input not recieved!";
         }
 
         /// <summary>
@@ -49,14 +50,14 @@ namespace ConsoleController
                 && result >= 0)
             {
                 InputInt = result;
-                InputStatus = "Valid Input";
+                InputStatus = "Valid Input. . .";
                 return true;
             }
 
             // Input is invalid
             // Clear InputString
             //InputString = string.Empty;
-            InputStatus = "Invalid Input";
+            InputStatus = "Invalid Input!";
             return false;
         }
 

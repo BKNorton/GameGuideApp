@@ -1,6 +1,6 @@
-﻿using GameGuideApp.MenuSystem.Attributes.Interfaces;
+﻿using MenuSystem.Attributes.Interfaces;
 
-namespace GameGuideApp.MenuSystem.MenuTemplates.Interfaces
+namespace MenuSystem.Menus.MenuTemplates.Interfaces
 {
     public interface IMenu_Model : IMenu
     {

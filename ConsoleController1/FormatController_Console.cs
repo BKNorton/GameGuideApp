@@ -1,5 +1,6 @@
-﻿using GameGuideApp.MenuSystem.Attributes.Interfaces;
-using GameGuideApp.MenuSystem.MenuTemplates.Interfaces;
+﻿
+using MenuSystem.Attributes.Interfaces;
+using MenuSystem.Menus.MenuTemplates.Interfaces;
 
 namespace ConsoleController
 {
@@ -93,6 +94,7 @@ namespace ConsoleController
             //Center and write menutitle and prompt
             return
                 // MenuTitle
+                "_________________________________\n\n" +
                 string.Format("{0,-32}",
                     string.Format("{0," + ((32 + menu.MenuTitle.Length) / 2).ToString() + "}", menu.MenuTitle)) + "\n" +
                 // Prompt
@@ -123,7 +125,7 @@ namespace ConsoleController
             output += StyleBorder("--", "--");
             foreach (var item in att.AttributesList)
             {
-                output += string.Format("\n{0, 8} {1, -8}", "-", item);
+                output += string.Format("\n{0, 8} {1, -8}\n", "-", item);
             }
             output += StyleBorder("--", "--");
             return output;

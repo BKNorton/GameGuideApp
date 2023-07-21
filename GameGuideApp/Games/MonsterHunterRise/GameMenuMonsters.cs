@@ -1,7 +1,8 @@
-﻿using GameGuideApp.MenuSystem.MenuTemplates;
-using GameGuideApp.MenuSystem.Utilities;
+﻿using GameGuideApp.Games.MonsterHunterRise.Models;
+using GameGuideApp.MenuSystem.Interfaces;
+using GameGuideApp.MenuSystem.MenuTemplates;
 
-namespace GameGuideApp.GamesLibrary
+namespace GameGuideApp.Games.MonsterHunterRise
 {
     public class GameMenuMonsters : Menu_SubMenus
     {
@@ -15,7 +16,7 @@ namespace GameGuideApp.GamesLibrary
             //SubMenus = new List<IMenu>();
 
             //Class Properies
-            _dataFile = @"MonsterHunterRise\Data\JSON_monsters.json";
+            _dataFile = @"Games\MonsterHunterRise\Data\JSON_monsters.json";
             _monsters = JsonReader.JsonFileToObjects<Monster>(_dataFile);
 
             //Add Menus

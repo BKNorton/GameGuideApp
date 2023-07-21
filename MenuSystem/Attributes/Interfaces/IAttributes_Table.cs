@@ -1,5 +1,5 @@
 ﻿
-namespace GameGuideApp.MenuSystem.Attributes.Interfaces
+namespace MenuSystem.Attributes.Interfaces
 {
     public interface IAttributes_Table : IAttributes
     {

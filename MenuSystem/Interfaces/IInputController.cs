@@ -1,4 +1,4 @@
-﻿namespace GameGuideApp.MenuSystem.Interfaces
+﻿namespace MenuSystem.Interfaces
 {
     public interface IInputController
     {

@@ -1,6 +1,7 @@
-﻿using GameGuideApp.MenuSystem;
+﻿
+using MenuSystem.Menus;
 
-namespace GameGuideApp.GamesLibrary
+namespace GamesLibrary
 {
     public class GameNoMansSky : Game
     {
