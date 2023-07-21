@@ -1,6 +1,5 @@
 ﻿
 using MenuSystem.Menus.MenuTemplates;
-using MenuSystem.Menus.MenuTemplates.Interfaces;
 
 namespace MenuSystem.Menus
 {
@@ -14,7 +13,7 @@ namespace MenuSystem.Menus
 
         public Game() 
         {
-            //GameMenu.Prompt = "Select Menu";
+            GameMenu.Prompt = "Select Menu";
         }
     }
 }
