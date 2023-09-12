@@ -1,4 +1,4 @@
-# DESCRIPTION:
+# DESCRIPTION
 	
 	This console app is a game guide to provide the user with useful information for games they are playing.
  
@@ -10,7 +10,7 @@
 
 
 
-# FEATURE LIST:
+# FEATURE LIST
 
       - Implement a “master loop” console application where the user can repeatedly enter commands/perform 
 	   
@@ -29,7 +29,7 @@
 
 
 
-# INSTRUCTIONS: 
+# INSTRUCTIONS
 
       -	Start Program
 
