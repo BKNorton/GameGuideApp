@@ -1,6 +1,6 @@
 <p align="center">
   <img 
-    height="500"
+    height="400"
     src="https://github.com/BKNorton/GameGuideApp/assets/112774855/26bd3761-b50b-4e9a-9e9e-d70635c92d8c"/>
 </p>
 
