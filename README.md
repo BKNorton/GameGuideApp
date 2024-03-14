@@ -86,7 +86,16 @@
   <img 
     height="400"
     src="https://github.com/BKNorton/GameGuideApp/assets/112774855/c2fb0679-a7a6-46cd-8760-9c3a586731b0"/>
+  <img
+    height="400"
+    src="https://github.com/BKNorton/GameGuideApp/assets/112774855/3a75ea25-7574-4fb5-985f-dd74fe3339d1"/>
+  <img
+    height="400"
+    src="https://github.com/BKNorton/GameGuideApp/assets/112774855/12f3629d-3071-4b92-8d63-9a650ea90fb9"/>
 </p>
+
+
+
 <h2>
 	 How to start and navigate through the app
 </h2>
