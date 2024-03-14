@@ -117,7 +117,7 @@
 	How to add more games
 </h2>
 <p>
-	Use the Monster Hunter Rise game as your example.
+	Use the Monster Hunter Rise game as your example. Can be found in GameGuideApp.GameLibrary.
 </p>
 <ol>
 	<li>In the GameLibrary project create a folder with the name of your game.</li>
