@@ -1,9 +1,3 @@
-<p align="center">
-  <img 
-    height="400"
-    src="https://github.com/BKNorton/GameGuideApp/assets/112774855/26bd3761-b50b-4e9a-9e9e-d70635c92d8c"/>
-</p>
-
 <h1>
 	Description
 </h1>
@@ -67,5 +61,64 @@
 	 <li>I also realized that I was using MVVM princibles before I had even learned them.</li>
 	 <li>The AppShell in MAUI that holds all pages within the app and provides navigation is similar to how my class Navigation_Menu contains all menus and provides navigation</li>
  </ul>
+
+ <h2>
+	 Notes
+ </h2>
+ <ui>
+	 <li>The only game that currently has any menu views workig is Monster Hunter Rise</li>
+	 <li>The Materials menu in Monster Hunter Rise has not been implemented</li>
+ </ui>
+ <h2>
+	 To Do
+ </h2>
+ <ol>
+	 <li>Finish Monster Hunter Rise game guide</li>
+	 <li>Add more attributes that allow users to persist data</li>
+	 <li>Finsh all code documentation</li>
+	 <li>Potentially I would like to add a view that allows users to create game guides in the app (very ambitious).</li>
+</ol>
  
- 
+<h1>
+	 Instructions
+</h1>
+<p align="center">
+  <img 
+    height="400"
+    src="https://github.com/BKNorton/GameGuideApp/assets/112774855/c2fb0679-a7a6-46cd-8760-9c3a586731b0"/>
+</p>
+<h2>
+	 How to start and navigate through the app
+</h2>
+<ol>
+	<li>Clone repository to local file.</li>
+	<li>Open the new file and start the debugger.</li>
+	<li>Type the number associated with the game you would like to view and press Enter.</li>
+	<li>Use this same method to navigate through all menu lists.</li>
+	<li>If you would like to go back to the previous menu, type 0 into the entry field and press Enter.</li>
+	<li>If you want to exit the program, return to the main menu and type 0 and press Enter.</li>
+</ol>
+
+<p align="center">
+  <img 
+    width="600"
+    src="https://github.com/BKNorton/GameGuideApp/assets/112774855/16676f3c-1d11-458f-a969-4b4d438e4f18"/>
+</p>
+<h2>
+	How to add more games
+</h2>
+<p>
+	Use the Monster Hunter Rise game as your example.
+</p>
+<ol>
+	<li>In the GameLibrary project create a folder with the name of your game.</li>
+	<li>Create a class that inherits from Game (This can be found in GameGuideApp.MenuSystem.Menus)</li>
+	<li>Create a folder in your game folder to hold all of your menus and name it "Menus"</li>
+	<li>Create all your menus using the Menu Templates that can be found in GameGuideApp.MenuSystem.Menus.MenuTemplates</li>
+	<ul>
+		<li>All menu temeplates are abstract and must be implemented when inherited</li>
+	</ul>
+	<li>Add your game to the List<Game> games in the Program.cs file in GameGuideApp.GameGuideConsole</li>
+</ol>
+
+
