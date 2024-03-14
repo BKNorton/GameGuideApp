@@ -112,7 +112,7 @@
 </p>
 <ol>
 	<li>In the GameLibrary project create a folder with the name of your game.</li>
-	<li>Create a class that inherits from Game (This can be found in GameGuideApp.MenuSystem.Menus)</li>
+	<li>Create a class that inherits from Game that can be found in GameGuideApp.MenuSystem.Menus</li>
 	<li>Create a folder in your game folder to hold all of your menus and name it "Menus"</li>
 	<li>Create all your menus using the Menu Templates that can be found in GameGuideApp.MenuSystem.Menus.MenuTemplates</li>
 	<ul>
