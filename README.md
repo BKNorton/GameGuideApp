@@ -55,9 +55,9 @@
 
   Originaly I had to format all the strings in the json file to display everything the way I wanted. This however was not optimal because I had to use string formating for every string and that took a very long time and a lot of trial and error to get.
 
-  Instead I created a formatting tool for console output that formats all the data for me as it displays. This saved me a lot of ugly tedious code.
+  Instead, I created a formatting tool for console output that formats all the data for me as it displays. This saved me a lot of ugly tedious code.
 
-  Later on when I learned how to use .Net MAUI I realized my menu system shared similarities with this framework. Of course mine is nowhere near as good but they contained similar concepts.
+  Later on when I learned how to use .Net MAUI, I realized my menu system shared similarities with this framework. Of course mine is nowhere near as good but they contained similar concepts.
  </p>
  <ul>
 	 <li>Adding pages in MAUI is similar to how you use the menus in mine.</li>
