@@ -26,6 +26,7 @@
 </p>
 <ui>
 	<li>Demonstrating my understanding of C# and Object Oriented Programming</li>
+	<li>Using Abstract classes to reduce code duplication</li>
 	<li>Using interfaces and constructor dependency injection to abstract dependencies and loosely couple classes</li>
 	<li>Using json to store data and read data and convert json strings into models and from models into json strings</li>
 	<li>Using SOLID Princibles to make my code more modularized and easier to understand, edit, and add too</li>
